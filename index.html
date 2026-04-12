@@ -234,6 +234,22 @@
     No hidden fees. No surprise charges. Clear pricing and dependable service on every move.
   </p>
 </div>
+<script>
+document.querySelectorAll('.nav-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+
+    this.classList.add('tap');
+
+    setTimeout(() => {
+      this.classList.remove('tap');
+      target.scrollIntoView({ behavior: 'smooth' });
+    }, 120);
+  });
+});
+</script>
 
 </body>
 <script>
