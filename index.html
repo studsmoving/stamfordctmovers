@@ -7,6 +7,29 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- 🔥 SCHEMA (SEO BOOST) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  "name": "2 Young Studs Moving",
+  "image": "hero.png",
+  "telephone": "+12038897558",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Stamford",
+    "addressRegion": "CT",
+    "addressCountry": "US"
+  },
+  "areaServed": "Stamford CT, Fairfield County CT",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "775"
+  }
+}
+</script>
+
 </head>
 
 <body>
@@ -27,9 +50,16 @@
     📞 Call Now: 203-889-7558
   </a>
 
-  <!-- ⭐ REVIEWS CTA -->
-  <a href="https://maps.app.goo.gl/tq352xUsoRFX92cs5" target="_blank" class="call-btn">
-    ⭐ Read Our 775+ 5-Star Reviews in Stamford
+  <!-- ⭐ GOOGLE BADGE -->
+  <a href="https://maps.app.goo.gl/tq352xUsoRFX92cs5" target="_blank" class="google-badge">
+    <div class="g-left">
+      <span class="g-logo">G</span>
+      <span>Google</span>
+    </div>
+    <div class="g-right">
+      <strong>4.6 ★</strong><br>
+      <span>775+ reviews</span>
+    </div>
   </a>
 </div>
 
@@ -38,7 +68,6 @@
   <h2>Top Rated Stamford Moving Services</h2>
 
   <div class="service-grid">
-
     <div class="service-box">
       <img src="arrow.jpg" class="arrow">
       <div>
@@ -70,7 +99,6 @@
         <p>No delays</p>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -96,42 +124,18 @@
     <li>Friendly, professional, reliable movers</li>
   </ul>
 
-  <p>
-    Looking for reliable Stamford movers? 2 Young Studs Moving has been proudly owned
-    and operated since 2004, completing over 55,000 moves across Connecticut.
-  </p>
+  <p>2 Young Studs Moving has been proudly owned and operated since 2004, completing over 55,000 moves across Connecticut.</p>
+  <p>We specialize in apartment moves, home moves, same day moving, and last minute moving throughout Stamford and Fairfield County.</p>
+  <p>Our company is known for reliability, showing up on time, and delivering stress free moving experiences.</p>
+  <p>Customers consistently mention how friendly, flexible, and easy to work with our team is.</p>
 
-  <p>
-    We specialize in apartment moves, home moves, same day moving, and last minute moves
-    throughout Stamford and all of Fairfield County.
-  </p>
+  <!-- EIN -->
+  <button onclick="togglePress()" class="press-btn">
+    Featured in EIN Press (Tap to View)
+  </button>
 
-  <p>
-    At 2 Young Studs Moving, we pride ourselves on the two things customers care about most:
-    no hidden fees and always showing up.
-  </p>
-
-  <p>
-    In an industry where missed appointments and last minute cancellations happen far too often,
-    we’ve built our reputation on reliability and consistency.
-  </p>
-
-  <p>
-    Our friendly and professional movers are known for being easy to work with, flexible,
-    and focused on getting your move done quickly and efficiently.
-  </p>
-
-  <!-- EIN PRESS EMBED -->
-  <div style="margin-top:15px;">
-    <button onclick="togglePress()" style="width:100%; padding:12px; border-radius:10px; background:#2e7d32; color:white; border:none; font-weight:bold;">
-      Featured in EIN Press (Tap to View)
-    </button>
-
-    <div id="press" style="display:none; margin-top:10px;">
-      <iframe src="https://www.einpresswire.com/article/901876835/2-young-studs-moving-reviews-highlight-verified-customer-feedback-across-connecticut"
-        width="100%" height="300" style="border:0;">
-      </iframe>
-    </div>
+  <div id="press" class="press-box">
+    <iframe src="https://www.einpresswire.com/article/901876835/2-young-studs-moving-reviews-highlight-verified-customer-feedback-across-connecticut"></iframe>
   </div>
 </div>
 
@@ -151,14 +155,12 @@
   </div>
 </div>
 
-<!-- SERVICE AREA -->
+<!-- MAP -->
 <div id="areas" class="section">
   <h2>Service Area</h2>
 
-  <div style="border-radius:12px; overflow:hidden; margin-bottom:10px;">
-    <iframe src="https://www.google.com/maps?q=Stamford,CT&output=embed"
-      width="100%" height="250" style="border:0;">
-    </iframe>
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=Stamford,CT&output=embed"></iframe>
   </div>
 
   <p class="service-area">
@@ -169,10 +171,7 @@
 <!-- POLICIES -->
 <div id="policies" class="section">
   <h2>Moving Policies</h2>
-
-  <p class="policies">
-    No hidden fees. No surprise charges. Clear pricing and dependable service on every move.
-  </p>
+  <p>No hidden fees. No surprise charges. Clear pricing and dependable service.</p>
 </div>
 
 <script>
