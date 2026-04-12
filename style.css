@@ -349,11 +349,11 @@ body {
 .g-yellow { color: #FBBC05; }
 .g-green { color: #34A853; }
 
-/* RATING */
 .google-rating {
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 52px;
+  font-weight: 900;
   margin: 5px 0;
+  letter-spacing: 1px;
 }
 
 /* STARS */
