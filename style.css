@@ -19,8 +19,8 @@ body {
 .logo {
   width: 100%;
   max-width: 300px;
-  display: block;
   margin: 0 auto;
+  display: block;
 }
 
 /* HEADLINE */
@@ -69,7 +69,7 @@ body {
 .serviceCard {
   background: #f7f7f7;
   border-radius: 12px;
-  padding: 10px 10px 10px 30px;
+  padding: 8px 10px 8px 28px;
   position: relative;
 }
 
@@ -77,9 +77,9 @@ body {
   content: "➤";
   position: absolute;
   left: 8px;
-  top: 10px;
+  top: 8px;
   color: #19e600;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .serviceTitle {
@@ -92,13 +92,13 @@ body {
   color: #666;
 }
 
-/* GREEN BUTTON ROW (IMPROVED TAP SIZE) */
+/* GREEN BUTTONS */
 .navBubbles {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
   margin-top: 10px;
-  margin-bottom: 16px; /* spacing above fold */
+  margin-bottom: 28px; /* 🔥 spacing before next section */
 }
 
 .bubble {
@@ -107,7 +107,7 @@ body {
   justify-content: center;
   text-align: center;
 
-  padding: 14px 6px; /* 🔥 BIGGER TAP TARGET */
+  padding: 14px 6px;
   border-radius: 999px;
 
   background: linear-gradient(#19e600, #0f7a16);
@@ -119,4 +119,50 @@ body {
 
   font-size: 13px;
   line-height: 1.2;
+}
+
+/* CONTENT */
+.contentSection {
+  margin-top: 10px;
+}
+
+.brandTagline {
+  color: #e0a800;
+  font-weight: 900;
+}
+
+/* MINI CALL BUTTON */
+.callMini {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 16px;
+  background: linear-gradient(#ffd400, #efbe00);
+  border-radius: 999px;
+  font-weight: 900;
+  color: #000;
+  text-decoration: none;
+}
+
+/* REVIEWS */
+.reviewBox {
+  background: #eee;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.reviewRating {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.reviewStars {
+  color: gold;
+  font-size: 18px;
+}
+
+/* MAP */
+.mapWrap {
+  border-radius: 12px;
+  overflow: hidden;
 }
