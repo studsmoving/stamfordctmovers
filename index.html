@@ -1,274 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stamford Movers | 2 Young Studs Moving</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stamford Movers | 2 Young Studs Moving</title>
 
-<style>
+  <meta name="description"
+    content="Stamford movers you can trust. Same day movers, apartment moves, home moves, and last minute moving in Stamford CT and Fairfield County."
+  />
 
-/* ===== BASE ===== */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-  text-align: center;
-}
-
-/* ===== HERO ===== */
-.hero-click {
-  display: block;
-}
-
-.hero-img {
-  width: 100%;
-  max-width: 360px;
-}
-
-/* ===== MAIN CTA ===== */
-.cta {
-  display: block;
-  background: #f4c400;
-  padding: 18px;
-  margin: 15px;
-  border-radius: 40px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
-/* ===== SERVICES ===== */
-.service-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
-}
-
-.box {
-  background: #eee;
-  padding: 10px;
-  border-radius: 12px;
-  font-size: 14px;
-}
-
-/* ===== NAV BUTTONS ===== */
-.nav-buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 15px;
-  margin-bottom: 40px; /* spacing from fold */
-}
-
-.nav-buttons a {
-  flex: 1;
-  background: linear-gradient(#00cc00, #009900);
-  padding: 14px 5px;
-  border-radius: 25px;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  border: 3px solid gold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ===== CONTENT ===== */
-.content {
-  padding: 20px;
-  text-align: left;
-}
-
-/* ===== GREEN BULLETS ===== */
-.bullets {
-  list-style: none;
-  padding: 0;
-}
-
-.bullets li {
-  margin: 8px 0;
-}
-
-.bullets li::before {
-  content: "➤ ";
-  color: green;
-}
-
-/* ===== SMALL CALL BUTTON ===== */
-.call-btn {
-  margin: 15px 0;
-}
-
-.call-btn a {
-  background: #f4c400;
-  padding: 10px 18px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* ===== REVIEWS ===== */
-.review-box {
-  background: #eee;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.rating {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.stars {
-  color: gold;
-}
-
-/* ===== MAP ===== */
-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-}
-
-/* ===== PRESS RELEASE ===== */
-.press-toggle {
-  background: green;
-  color: white;
-  padding: 12px;
-  border-radius: 10px;
-  border: none;
-  margin-top: 10px;
-}
-
-.press-content {
-  display: none;
-  margin-top: 15px;
-}
-
-.press-content iframe {
-  width: 100%;
-  height: 400px;
-}
-
-/* ===== ARROW LINE ===== */
-.arrow-line::before {
-  content: "➤ ";
-  color: green;
-}
-
-</style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- HERO (CLICKABLE) -->
-<a href="tel:2038897558" class="hero-click">
-  <img src="hero.png" class="hero-img" alt="Stamford Movers">
-</a>
+<div class="container">
 
-<h1>Stamford Movers You Can Trust</h1>
-<p>Same Day Movers • No Hidden Fees • Fast Scheduling</p>
+  <!-- HERO -->
+  <section class="topSection">
 
-<a href="tel:2038897558" class="cta">📞 Call Now: 203-889-7558</a>
+    <div class="hero">
+      <img src="hero.png" alt="Stamford Movers 2 Young Studs Moving" class="logo">
+    </div>
 
-<h2>Top Rated Stamford Moving Services</h2>
+    <h1 class="heroText">Stamford Movers You Can Trust</h1>
 
-<div class="service-grid">
-  <div class="box">➤ Apartment Moves<br><small>Fast, careful</small></div>
-  <div class="box">➤ Home Moves<br><small>Full service</small></div>
-  <div class="box">➤ Same Day Moving<br><small>Available today</small></div>
-  <div class="box">➤ Last Minute Moves<br><small>No delays</small></div>
+    <p class="heroSub">
+      Same Day Movers • No Hidden Fees • Fast Scheduling
+    </p>
+
+    <a href="tel:12038897558" class="callButton">
+      📞 Call Now: 203-889-7558
+    </a>
+
+    <!-- SERVICES -->
+    <section class="servicesSection">
+      <h2 class="sectionTitle">Top Rated Stamford Moving Services</h2>
+
+      <div class="servicesGrid">
+
+        <div class="serviceCard">
+          <div class="serviceTitle">Apartment Moves</div>
+          <div class="serviceSub">Fast, careful</div>
+        </div>
+
+        <div class="serviceCard">
+          <div class="serviceTitle">Home Moves</div>
+          <div class="serviceSub">Full service</div>
+        </div>
+
+        <div class="serviceCard">
+          <div class="serviceTitle">Same Day Moving</div>
+          <div class="serviceSub">Available today</div>
+        </div>
+
+        <div class="serviceCard">
+          <div class="serviceTitle">Last Minute Moves</div>
+          <div class="serviceSub">No delays</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GREEN BUTTONS -->
+    <div class="navBubbles">
+      <a href="#whyus" class="bubble">Why Us</a>
+      <a href="#reviews" class="bubble">Reviews</a>
+      <a href="#servicearea" class="bubble">Service Areas</a>
+      <a href="#policies" class="bubble">Policies</a>
+    </div>
+
+  </section>
+
+  <!-- WHY US -->
+  <section id="whyus" class="contentSection">
+    <h2>2 Young Studs Moving</h2>
+
+    <h3 class="brandTagline">HOW MANY STUDS DO YOU NEED?</h3>
+
+    <p>
+      Looking for reliable Stamford movers? 2 Young Studs Moving – Stamford has been proudly owned and operated by Chris Monks since 2004, providing professional moving services across Stamford and all of Fairfield County for over two decades.
+    </p>
+
+    <p>
+      We have completed more than 55,000 moves across Connecticut, handling more volume than nearly any other local moving company in the state.
+    </p>
+
+    <p>
+      At 2 Young Studs Moving – Stamford, we pride ourselves on the two things customers care about most: never any hidden fees and always showing up for your move.
+    </p>
+
+    <a href="tel:12038897558" class="callMini">CALL</a>
+
+    <p>
+      Our friendly, professional movers will never leave you hanging last minute. We provide fast quotes over the phone so you know exactly what to expect.
+    </p>
+
+    <p>
+      In an industry full of no-shows and cancellations, we’ve built our reputation on dependability and consistency throughout Stamford CT.
+    </p>
+
+    <p>
+      Owner Chris Monks has been the only owner since inception, building one of the most recognized moving companies in Fairfield County.
+    </p>
+
+    <a href="tel:12038897558" class="callMini">CALL</a>
+
+    <p>
+      His hands-on involvement ensures every move meets the same high standards that have defined the company for over 20 years.
+    </p>
+
+    <p>
+      Customers consistently mention how flexible, responsive, and easy to work with Chris is, along with how friendly and energetic the movers are.
+    </p>
+
+    <p>
+      If you're searching for dependable movers in Stamford CT, 2 Young Studs Moving is the clear choice.
+    </p>
+
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="contentSection">
+    <h2>Reviews</h2>
+
+    <div class="reviewBox">
+      <div class="reviewRating">4.6</div>
+      <div class="reviewStars">★★★★★</div>
+      <p>Verified Google Reviews across Connecticut</p>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section id="servicearea" class="contentSection">
+    <h2>Service Area</h2>
+
+    <div class="mapWrap">
+      <iframe
+        src="https://maps.google.com/maps?q=Stamford%20CT&t=&z=11&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="320"
+        style="border:0;"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <p>
+      Stamford • Greenwich • Darien • Norwalk • New Canaan • Westport • Wilton • Fairfield County
+    </p>
+  </section>
+
 </div>
-
-<!-- GREEN BUTTONS -->
-<div class="nav-buttons">
-  <a href="#why">Why Us</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#service">Service Areas</a>
-  <a href="#policies">Policies</a>
-</div>
-
-<!-- WHY US -->
-<div class="content" id="why">
-
-<h2>2 Young Studs Moving – Stamford</h2>
-<h3>HOW MANY STUDS DO YOU NEED?</h3>
-
-<ul class="bullets">
-<li>55,000+ moves completed across Connecticut</li>
-<li>Serving Stamford, Greenwich, Darien, Norwalk, Fairfield County</li>
-<li>Never any hidden fees or extra charges</li>
-<li>We always show up to your move</li>
-<li>Friendly, professional, reliable movers</li>
-</ul>
-
-<p>At 2 Young Studs Moving – Stamford, we pride ourselves on the two things customers care about most: never any hidden fees and always showing up for your move.</p>
-
-<div class="call-btn"><a href="tel:2038897558">CALL</a></div>
-
-<p>Our movers are friendly, professional, and never leave you hanging last minute. We provide fast quotes so you always know what to expect.</p>
-
-<p>In an industry full of no-shows, we’ve built our reputation on reliability and consistency.</p>
-
-<div class="call-btn"><a href="tel:2038897558">CALL</a></div>
-
-<p>Owner Chris Monks has been the only owner since 2004, building one of the most trusted moving companies in Connecticut.</p>
-
-<p>With more than 55,000 moves completed, we handle more volume than nearly any local moving company in the state.</p>
-
-<div class="call-btn"><a href="tel:2038897558">CALL</a></div>
-
-<p>Customers consistently mention how flexible, responsive, and easy to work with Chris is, along with how friendly and energetic the movers are.</p>
-
-<p>If you're searching for dependable Stamford movers, 2 Young Studs Moving is the clear choice.</p>
-
-<p class="arrow-line">Featured in EIN Presswire for 700+ verified customer reviews</p>
-
-<button class="press-toggle" onclick="togglePress()">View Press Release</button>
-
-<div class="press-content" id="press">
-<iframe src="https://www.einpresswire.com/article/901876835/2-young-studs-moving-reviews-highlight-verified-customer-feedback-across-connecticut"></iframe>
-</div>
-
-</div>
-
-<!-- REVIEWS -->
-<div class="content" id="reviews">
-<h2>Reviews</h2>
-
-<div class="review-box">
-<div class="rating">4.6</div>
-<div class="stars">★★★★★</div>
-<p>Verified Google Reviews across Connecticut</p>
-</div>
-</div>
-
-<!-- SERVICE AREA -->
-<div class="content" id="service">
-<h2>Service Area</h2>
-
-<iframe src="https://maps.google.com/maps?q=Stamford,CT&z=11&output=embed"></iframe>
-
-<p>Stamford • Greenwich • Darien • Norwalk • New Canaan • Westport • Wilton • Fairfield County</p>
-</div>
-
-<!-- POLICIES -->
-<div class="content" id="policies">
-<h2>Moving Policies</h2>
-<p>No hidden fees. No surprises. We always show up. Clear pricing and dependable service every time.</p>
-</div>
-
-<script>
-function togglePress() {
-  var x = document.getElementById("press");
-  x.style.display = (x.style.display === "block") ? "none" : "block";
-}
-</script>
 
 </body>
 </html>
