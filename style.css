@@ -1,205 +1,159 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   margin: 0;
-  background: #f3f3f3;
-  color: #111;
-}
-
-.container {
-  max-width: 430px;
-  margin: auto;
-  padding: 10px 14px 20px;
+  background: #f5f5f5;
+  text-align: center;
 }
 
 /* HERO */
-.hero {
-  text-align: center;
-}
-
-.logo {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
+.hero-click {
   display: block;
 }
 
-/* HEADLINE */
-.heroText {
-  font-size: 26px;
-  font-weight: 900;
-  color: #1f9a34;
-  margin-top: 6px;
-}
-
-.heroSub {
-  font-size: 14px;
-  color: #666;
-  margin-top: 4px;
-}
-
-/* CALL BUTTON */
-.callButton {
-  display: block;
+.hero-img {
   width: 100%;
-  margin: 10px 0;
-  padding: 16px;
-  border-radius: 16px;
-  background: linear-gradient(#ffd400, #efbe00);
-  color: #000;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 900;
+  max-width: 350px;
+}
+
+.cta {
+  display: block;
+  background: #f4c400;
+  padding: 18px;
+  margin: 15px;
+  border-radius: 40px;
+  font-weight: bold;
   text-decoration: none;
+  color: black;
 }
 
 /* SERVICES */
-.sectionTitle {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  margin: 12px 0 8px;
-}
-
-.servicesGrid {
+.service-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 10px;
+  padding: 10px;
 }
 
-.serviceCard {
-  background: #f7f7f7;
+.box {
+  background: #eee;
+  padding: 10px;
   border-radius: 12px;
-  padding: 8px 10px 8px 28px;
-  position: relative;
-}
-
-.serviceCard::before {
-  content: "➤";
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  color: #19e600;
   font-size: 14px;
 }
 
-.serviceTitle {
-  font-weight: 900;
-  font-size: 14px;
-}
-
-.serviceSub {
-  font-size: 12px;
-  color: #666;
+.box span {
+  color: green;
 }
 
 /* GREEN BUTTONS */
-.navBubbles {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
   gap: 8px;
-  margin-top: 10px;
-  margin-bottom: 28px; /* 🔥 spacing before next section */
+  padding: 15px;
+  margin-bottom: 35px; /* space from fold */
 }
 
-.bubble {
+.nav-buttons a {
+  flex: 1;
+  background: linear-gradient(#00cc00, #009900);
+  padding: 14px 5px;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid gold;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-
-  padding: 14px 6px;
-  border-radius: 999px;
-
-  background: linear-gradient(#19e600, #0f7a16);
-  color: #000;
-  font-weight: 900;
-
-  border: 3px solid #ffd400;
-  text-decoration: none;
-
-  font-size: 13px;
-  line-height: 1.2;
 }
 
 /* CONTENT */
-.contentSection {
-  margin-top: 10px;
-}
-
-.brandTagline {
-  color: #e0a800;
-  font-weight: 900;
-}
-
-/* MINI CALL BUTTON */
-.callMini {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 8px 16px;
-  background: linear-gradient(#ffd400, #efbe00);
-  border-radius: 999px;
-  font-weight: 900;
-  color: #000;
-  text-decoration: none;
-}
-
-/* REVIEWS */
-.reviewBox {
-  background: #eee;
+.content {
   padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.reviewRating {
-  font-size: 32px;
-  font-weight: 900;
-}
-
-.reviewStars {
-  color: gold;
-  font-size: 18px;
-}
-
-/* MAP */
-.mapWrap {
-  border-radius: 12px;
-  overflow: hidden;
-}
-/* GREEN ARROW BULLETS */
-.arrowList {
-  list-style: none;
-  padding-left: 0;
-  margin: 10px 0;
-}
-
-.arrowList li {
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 6px;
-  font-weight: 500;
-}
-
-.arrowList li::before {
-  content: "➤";
-  position: absolute;
-  left: 0;
-  color: #19e600;
-  font-size: 14px;
-}
-
-/* PRESS RELEASE BOX */
-.pressBox {
-  margin-top: 10px;
   text-align: left;
 }
 
-.pressButton {
-  display: inline-block;
-  background: #2f7d32;
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 8px;
+/* BULLETS */
+.bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.bullets li {
+  margin: 8px 0;
+}
+
+.bullets li::before {
+  content: "➤ ";
+  color: green;
+}
+
+/* CALL BUTTONS */
+.call-btn {
+  margin: 15px 0;
+}
+
+.call-btn a {
+  background: #f4c400;
+  padding: 10px 18px;
+  border-radius: 25px;
   text-decoration: none;
-  font-weight: 700;
+  color: black;
+  font-weight: bold;
+}
+
+/* REVIEWS */
+.review-box {
+  background: #eee;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.rating {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.areas {
+  margin-top: 10px;
+}
+
+/* PRESS */
+.press-toggle {
+  background: green;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+.press-content {
+  display: none;
+  margin-top: 15px;
+}
+
+.press-content iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/* ARROW LINE */
+.arrow-line::before {
+  content: "➤ ";
+  color: green;
 }
