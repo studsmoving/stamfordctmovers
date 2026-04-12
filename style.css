@@ -4,44 +4,50 @@
   padding:0;
 }
 
-/* COLORS */
 :root{
   --green:#19e600;
   --darkGreen:#0f7a16;
   --yellow:#ffd400;
-  --text:#111;
 }
 
 /* BODY */
 body{
   font-family:Arial, sans-serif;
   background:#ffffff;
-  color:var(--text);
   text-align:center;
+  color:#111;
 }
 
 /* CONTAINER */
 .container{
   max-width:820px;
   margin:0 auto;
-  padding:0 12px 30px;
+  padding:0 12px;
+}
+
+/* ABOVE FOLD CONTROL */
+.aboveFold{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 /* HERO */
 .hero{
-  padding-top:20px;
+  padding-top:15px;
 }
 
 .logo{
   width:100%;
   max-width:520px;
-  max-height:52vh;
+  max-height:46vh;
   object-fit:contain;
 }
 
 /* TEXT */
 .heroText{
-  font-size:30px;
+  font-size:28px;
   font-weight:900;
   color:#1aa02a;
   margin-top:10px;
@@ -50,23 +56,37 @@ body{
 .heroHook{
   font-size:20px;
   font-weight:900;
-  color:#ffd400;
-  margin-top:6px;
+  color:#ffc400;
+  margin-top:4px;
 }
 
 .heroSub{
-  font-size:16px;
+  font-size:15px;
   color:#555;
-  margin-top:6px;
+  margin-top:4px;
+}
+
+/* CALL BUTTON */
+.callBtn{
+  display:inline-block;
+  margin-top:10px;
+  padding:14px 22px;
+  background:linear-gradient(#ffd400, #f0b800);
+  color:#000;
+  font-size:18px;
+  font-weight:900;
+  border-radius:10px;
+  text-decoration:none;
+  box-shadow:0 6px 14px rgba(0,0,0,.15);
 }
 
 /* SERVICES */
 .services{
-  margin-top:25px;
+  margin-top:20px;
 }
 
 .servicesTitle{
-  font-size:26px;
+  font-size:24px;
   font-weight:900;
   margin-bottom:12px;
 }
@@ -75,7 +95,7 @@ body{
 .serviceGrid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:12px;
+  gap:10px;
 }
 
 /* BOX */
@@ -87,22 +107,16 @@ body{
   background:#fff;
   border-radius:10px;
   box-shadow:0 4px 10px rgba(0,0,0,.06);
-  cursor:pointer;
   text-align:left;
+  cursor:pointer;
 }
 
-.serviceBox:hover{
-  transform:translateY(-2px);
-}
-
-/* ARROW */
 .arrow{
   color:#19e600;
   font-size:18px;
   font-weight:900;
 }
 
-/* TEXT */
 .serviceBox strong{
   font-size:15px;
   font-weight:900;
@@ -131,64 +145,35 @@ body{
   border:3px solid var(--yellow);
 }
 
-/* INFO */
+/* BELOW FOLD */
 .infoSection{
   margin-top:50px;
   text-align:left;
 }
 
 .infoSection h2{
-  font-size:26px;
+  font-size:24px;
   margin-bottom:10px;
 }
 
 .infoSection p{
-  font-size:17px;
+  font-size:16px;
   line-height:1.6;
-  margin-bottom:18px;
-}
-
-/* REVIEWS */
-.review-box{
-  background:#fff;
-  border-radius:14px;
-  padding:20px;
-  text-align:center;
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
-}
-
-.review-stars{
-  color:#fbbc04;
-  font-size:24px;
-}
-
-.review-button{
-  display:inline-block;
-  padding:12px 20px;
-  background:#4285F4;
-  color:#fff;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:700;
 }
 
 /* MOBILE */
 @media(max-width:560px){
 
   .logo{
-    max-height:48vh;
+    max-height:44vh;
   }
 
   .heroText{
-    font-size:28px;
+    font-size:26px;
   }
 
-  .serviceBox strong{
-    font-size:16px;
-  }
-
-  .serviceBox p{
-    font-size:13px;
+  .servicesTitle{
+    font-size:22px;
   }
 
 }
