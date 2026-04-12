@@ -119,9 +119,13 @@ body {
   font-size: 15px;           /* slightly bigger */
   line-height: 1.1;
 
-  text-align: center;
+  text-align: center;transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.quick-links a:active {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
 /* CONTENT */
 .section {
   padding: 15px;
