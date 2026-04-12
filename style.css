@@ -326,13 +326,13 @@ body {
   font-size: 12px;
   font-weight: bold;
 }
-/* GOOGLE BADGE */
 .google-badge {
   background: #fff;
   border-radius: 16px;
   padding: 22px;
   text-align: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+  box-shadow: 0 8px 25px rgba(242, 183, 5, 0.35); /* ← THIS is the upgrade */
   border: 3px solid #f2b705;
 }
 
