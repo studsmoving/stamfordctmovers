@@ -388,3 +388,23 @@ body {
   font-weight: bold;
   font-size: 16px;
 }
+/* PULSE EFFECT */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 8px 25px rgba(242, 183, 5, 0.35);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(242, 183, 5, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 8px 25px rgba(242, 183, 5, 0.35);
+  }
+}
+
+/* APPLY TO REVIEW BUTTON */
+.review-btn {
+  animation: pulseGlow 2.2s infinite;
+}
