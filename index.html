@@ -251,6 +251,13 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 });
 </script>
 
+<script>
+function vibrateTap() {
+  if (navigator.vibrate) {
+    navigator.vibrate(15); // super subtle tap
+  }
+}
+</script>
 </body>
 <script>
 function toggleEin() {
