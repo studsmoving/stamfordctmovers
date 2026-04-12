@@ -166,3 +166,40 @@ body {
   border-radius: 12px;
   overflow: hidden;
 }
+/* GREEN ARROW BULLETS */
+.arrowList {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.arrowList li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.arrowList li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #19e600;
+  font-size: 14px;
+}
+
+/* PRESS RELEASE BOX */
+.pressBox {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.pressButton {
+  display: inline-block;
+  background: #2f7d32;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
