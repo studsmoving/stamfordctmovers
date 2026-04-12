@@ -5,46 +5,47 @@
 }
 
 body{
-  font-family:Arial, sans-serif;
-  background:#000;
-  color:#fff;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(#f8f8f8,#eaeaea);
   text-align:center;
+  color:#111;
 }
 
 .container{
   max-width:820px;
-  margin:auto;
-  padding:10px;
+  margin:0 auto;
+  padding:0 12px 30px;
 }
 
 /* HERO */
 .hero{
-  padding-top:10px;
+  margin-top:20px;
 }
 
 .logo{
   width:90%;
-  max-width:420px;
+  max-width:500px;
 }
 
+/* TEXT */
 .heroText{
-  font-size:28px;
-  color:#39ff14;
+  font-size:30px;
   font-weight:900;
+  color:#16a34a;
   margin-top:10px;
 }
 
 .heroSub{
   font-size:16px;
-  color:#ccc;
-  margin-bottom:15px;
+  color:#555;
+  margin-bottom:20px;
 }
 
 /* SERVICES */
 .servicesTitle{
   font-size:24px;
-  color:#39ff14;
-  margin-bottom:10px;
+  font-weight:900;
+  margin:20px 0;
 }
 
 .serviceGrid{
@@ -55,80 +56,97 @@ body{
 
 .serviceBox{
   background:#fff;
-  color:#000;
   border-radius:12px;
-  padding:10px;
+  padding:12px;
+  box-shadow:0 6px 14px rgba(0,0,0,.1);
   text-align:left;
+  display:flex;
+  gap:10px;
 }
 
-.serviceBox h4{
-  font-size:16px;
-  margin-bottom:5px;
+.icon{
+  font-size:20px;
 }
 
-.serviceBox p{
+.serviceText h4{
+  font-size:15px;
+  font-weight:900;
+}
+
+.serviceText p{
   font-size:13px;
+  color:#444;
 }
 
 /* BUBBLES */
 .navBubbles{
-  margin:15px 0;
+  margin:20px 0;
+  display:flex;
+  justify-content:center;
+  gap:10px;
 }
 
 .bubbleBtn{
-  display:inline-block;
-  background:#39ff14;
-  color:#000;
-  padding:10px 14px;
-  margin:5px;
-  border-radius:30px;
-  font-weight:bold;
+  padding:10px 16px;
+  border-radius:999px;
+  background:#22c55e;
+  color:#fff;
+  font-weight:900;
   text-decoration:none;
 }
 
-/* INFO */
+/* SECTIONS */
 .infoSection{
   margin-top:40px;
   text-align:left;
 }
 
 .infoSection h2{
-  font-size:22px;
+  font-size:24px;
   margin-bottom:10px;
 }
 
 .infoSection p{
-  font-size:15px;
+  font-size:16px;
   margin-bottom:15px;
 }
 
 /* REVIEWS */
-.reviewBox{
-  background:#111;
-  padding:15px;
-  border-radius:10px;
+.review-box{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
   text-align:center;
+  box-shadow:0 6px 14px rgba(0,0,0,.1);
 }
 
-.rating{
-  font-size:26px;
-  color:#fbbc04;
+.review-badge{
+  font-size:32px;
+  font-weight:900;
 }
 
-.reviewBtn{
+.review-stars{
+  color:#fbbf24;
+  font-size:22px;
+}
+
+.review-button{
   display:inline-block;
   margin-top:10px;
+  padding:10px 20px;
   background:#4285F4;
   color:#fff;
-  padding:10px;
-  border-radius:6px;
+  border-radius:8px;
   text-decoration:none;
 }
 
-/* CALL */
+/* FOOTER */
 .footerCall{
   margin-top:30px;
-  font-size:28px;
-  font-weight:bold;
-  color:#39ff14;
-} 
+}
+
+.numberBig{
+  font-size:32px;
+  font-weight:900;
+  color:#16a34a;
+}
