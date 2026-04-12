@@ -254,3 +254,66 @@ body {
   padding: 8px;
   font-size: 13px;
 }
+
+/* GREEN ARROW FIX */
+.green-arrow {
+  color: #18d400;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* SMALL CALL BUTTON */
+.mini-call-wrap {
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+.mini-call-btn {
+  display: inline-block;
+  background: linear-gradient(#f7c948, #f2b705);
+  color: black;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* EIN TEASER */
+.ein-preview {
+  width: 120px;
+  margin: 6px 0;
+  opacity: 0.85;
+}
+
+.ein-preview img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* EIN EXPAND */
+.ein-expanded {
+  display: none;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ein-headline {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.ein-read {
+  display: inline-block;
+  background: linear-gradient(#f7c948, #f2b705);
+  color: black;
+  padding: 5px 12px;
+  border-radius: 18px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
