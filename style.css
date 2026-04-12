@@ -25,12 +25,13 @@ body{
   padding:0 12px;
 }
 
-/* ABOVE FOLD CONTROL */
+/* ABOVE FOLD (KEY SECTION) */
 .aboveFold{
   min-height:100vh;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  padding-bottom:10px;
 }
 
 /* HERO */
@@ -41,35 +42,30 @@ body{
 .logo{
   width:100%;
   max-width:520px;
-  max-height:46vh;
+  max-height:44vh;
   object-fit:contain;
 }
 
-/* TEXT */
+/* HEADLINE */
 .heroText{
   font-size:28px;
   font-weight:900;
   color:#1aa02a;
-  margin-top:10px;
+  margin-top:8px;
 }
 
-.heroHook{
-  font-size:20px;
-  font-weight:900;
-  color:#ffc400;
-  margin-top:4px;
-}
-
+/* SUBTEXT */
 .heroSub{
   font-size:15px;
   color:#555;
   margin-top:4px;
+  margin-bottom:8px;
 }
 
 /* CALL BUTTON */
 .callBtn{
   display:inline-block;
-  margin-top:10px;
+  margin-top:8px;
   padding:14px 22px;
   background:linear-gradient(#ffd400, #f0b800);
   color:#000;
@@ -80,15 +76,19 @@ body{
   box-shadow:0 6px 14px rgba(0,0,0,.15);
 }
 
+.callBtn:active{
+  transform:translateY(1px);
+}
+
 /* SERVICES */
 .services{
-  margin-top:20px;
+  margin-top:15px;
 }
 
 .servicesTitle{
   font-size:24px;
   font-weight:900;
-  margin-bottom:12px;
+  margin-bottom:10px;
 }
 
 /* GRID */
@@ -98,7 +98,7 @@ body{
   gap:10px;
 }
 
-/* BOX */
+/* SERVICE BOX */
 .serviceBox{
   display:flex;
   gap:8px;
@@ -111,12 +111,18 @@ body{
   cursor:pointer;
 }
 
+.serviceBox:active{
+  transform:translateY(1px);
+}
+
+/* ARROW */
 .arrow{
-  color:#19e600;
+  color:var(--green);
   font-size:18px;
   font-weight:900;
 }
 
+/* TEXT */
 .serviceBox strong{
   font-size:15px;
   font-weight:900;
@@ -127,9 +133,9 @@ body{
   color:#555;
 }
 
-/* BUBBLES */
+/* BUBBLES (BOTTOM OF FOLD) */
 .navBubbles{
-  margin:20px auto 10px;
+  margin:15px auto 5px;
   display:flex;
   justify-content:center;
   gap:12px;
@@ -143,6 +149,7 @@ body{
   font-weight:900;
   text-decoration:none;
   border:3px solid var(--yellow);
+  box-shadow:0 6px 14px rgba(0,0,0,.15);
 }
 
 /* BELOW FOLD */
@@ -151,21 +158,32 @@ body{
   text-align:left;
 }
 
+/* HEADINGS */
 .infoSection h2{
-  font-size:24px;
-  margin-bottom:10px;
+  font-size:26px;
+  margin-bottom:8px;
 }
 
+/* TAGLINE */
+.tagline{
+  font-size:22px;
+  font-weight:900;
+  color:var(--yellow);
+  margin-bottom:12px;
+}
+
+/* PARAGRAPH */
 .infoSection p{
-  font-size:16px;
+  font-size:17px;
   line-height:1.6;
+  margin-bottom:18px;
 }
 
-/* MOBILE */
+/* MOBILE OPTIMIZATION */
 @media(max-width:560px){
 
   .logo{
-    max-height:44vh;
+    max-height:42vh;
   }
 
   .heroText{
@@ -174,6 +192,18 @@ body{
 
   .servicesTitle{
     font-size:22px;
+  }
+
+  .serviceBox strong{
+    font-size:16px;
+  }
+
+  .serviceBox p{
+    font-size:13px;
+  }
+
+  .tagline{
+    font-size:20px;
   }
 
 }
