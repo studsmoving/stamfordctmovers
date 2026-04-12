@@ -1,3 +1,4 @@
+
 /* RESET */
 * {
   margin: 0;
@@ -19,22 +20,24 @@ body {
   padding: 8px 14px 30px;
 }
 
-/* ===== TOP SECTION (KEY FIX) ===== */
+/* ===== TOP SECTION (CONTROLS FOLD) ===== */
 .topSection {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
   position: relative;
   text-align: center;
+  overflow: hidden; /* FIXES IMAGE BLEED */
 }
 
 .logo {
   width: 100%;
-  max-width: 360px;
+  height: auto;            /* CRITICAL FIX */
+  max-width: 360px;        /* BALANCED SIZE */
   display: block;
   margin: 0 auto;
 }
@@ -50,7 +53,7 @@ body {
   cursor: pointer;
 }
 
-/* HEADLINE */
+/* ===== HEADLINE ===== */
 .heroText {
   font-size: 24px;
   font-weight: 900;
@@ -66,7 +69,7 @@ body {
   text-align: center;
 }
 
-/* CALL BUTTON */
+/* ===== CALL BUTTON ===== */
 .callButton {
   display: block;
   width: 100%;
@@ -81,7 +84,7 @@ body {
   text-decoration: none;
 }
 
-/* SERVICES */
+/* ===== SERVICES ===== */
 .servicesSection {
   margin-top: 6px;
 }
@@ -125,7 +128,7 @@ body {
   color: #666;
 }
 
-/* GREEN BUTTONS */
+/* ===== GREEN BUTTONS (AT FOLD) ===== */
 .navBubbles {
   display: flex;
   gap: 8px;
@@ -144,7 +147,7 @@ body {
   text-decoration: none;
 }
 
-/* BELOW FOLD */
+/* ===== BELOW FOLD ===== */
 .contentSection {
   margin-top: 30px;
 }
@@ -154,4 +157,41 @@ body {
   font-weight: 900;
   color: #f0be00;
   margin: 10px 0;
+}
+
+/* ===== REVIEWS ===== */
+.reviewBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.reviewBadge {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #fbbc04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reviewRating {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.reviewStars {
+  font-size: 22px;
+  color: #fbbc04;
+}
+
+/* ===== MAP ===== */
+.mapWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
 }
