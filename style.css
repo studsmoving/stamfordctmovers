@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-  width: 100%;
+  width: 80%;
   height: auto;            /* CRITICAL FIX */
   max-width: 360px;        /* BALANCED SIZE */
   display: block;
