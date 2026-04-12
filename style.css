@@ -230,3 +230,27 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.ein-preview {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ein-preview img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.ein-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+}
