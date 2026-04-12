@@ -317,3 +317,12 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.ein-badge {
+  display: inline-block;
+  background: #111;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
