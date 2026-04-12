@@ -16,20 +16,18 @@ body {
 .container {
   max-width: 430px;
   margin: 0 auto;
-  padding: 12px 12px 28px;
+  padding: 10px 12px 28px;
 }
 
-/* TOP / ABOVE FOLD */
+/* TOP SECTION */
 .topSection {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 /* HERO */
 .hero {
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
 .logo {
@@ -40,9 +38,9 @@ body {
   margin: 0 auto;
 }
 
-/* HEADLINE AREA */
+/* HEADLINE */
 .heroText {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 28px;
   line-height: 1.12;
   font-weight: 900;
@@ -97,7 +95,7 @@ body {
   text-align: left;
   background: #f7f7f7;
   border-radius: 14px;
-  padding: 12px 12px;
+  padding: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
 }
 
@@ -128,7 +126,7 @@ body {
 
 /* BUBBLES */
 .navBubbles {
-  margin-top: 16px;
+  margin-top: 14px;
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -148,9 +146,9 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
 }
 
-/* BELOW FOLD CONTENT */
+/* CONTENT SECTIONS */
 .contentSection {
-  margin-top: 48px;
+  margin-top: 44px;
   text-align: left;
 }
 
@@ -181,7 +179,90 @@ body {
   margin-bottom: 14px;
 }
 
-/* MOBILE POLISH */
+/* REVIEWS */
+.reviewBox {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px 18px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.googleWord {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4285f4;
+  margin-bottom: 12px;
+}
+
+.reviewBadge {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 6px #fbbc04, 0 6px 18px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewRating {
+  font-size: 30px;
+  font-weight: 900;
+  color: #111;
+  line-height: 1;
+}
+
+.reviewSmall {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.reviewStars {
+  font-size: 24px;
+  color: #fbbc04;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.reviewVerified {
+  display: inline-block;
+  background: #e8f0fe;
+  color: #1967d2;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.reviewText {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.reviewButton {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4285f4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* MAP */
+.mapWrap {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 14px;
+}
+
+/* SMALLER PHONES */
 @media (max-width: 380px) {
   .heroText {
     font-size: 25px;
