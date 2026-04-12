@@ -1,200 +1,214 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
-  background:#f3f3f3;
-  color:#111;
+  background: #f3f3f3;
+  color: #111;
 }
 
-.container{
-  max-width:430px;
-  margin:0 auto;
-  padding:10px 14px 30px;
+.container {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 10px 14px 30px;
 }
 
-/* ===== HERO (BIGGER NOW) ===== */
-.hero{
-  text-align:center;
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
 }
 
-.logo{
-  width:100%;
-  max-width:360px; /* 🔥 BIGGER */
-  margin:0 auto;
-  display:block;
+.logo {
+  width: 100%;
+  max-width: 380px; /* BIG HERO */
+  display: block;
+  margin: 0 auto;
 }
 
 /* HEADLINE */
-.heroText{
-  margin-top:8px;
-  font-size:26px;
-  font-weight:900;
-  color:#1f9a34;
-  text-align:center;
+.heroText {
+  margin-top: 8px;
+  font-size: 26px;
+  font-weight: 900;
+  color: #1f9a34;
+  text-align: center;
 }
 
-.heroSub{
-  margin-top:6px;
-  font-size:14px;
-  text-align:center;
-  color:#666;
+.heroSub {
+  margin-top: 6px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
 }
 
 /* CALL BUTTON */
-.callButton{
-  display:block;
-  width:100%;
-  margin:12px auto;
-  padding:16px;
-  border-radius:14px;
-  background:linear-gradient(#ffd400,#efbe00);
-  color:#000;
-  text-decoration:none;
-  text-align:center;
-  font-size:18px;
-  font-weight:900;
-  box-shadow:0 4px 12px rgba(0,0,0,.15);
+.callButton {
+  display: block;
+  width: 100%;
+  margin: 12px auto;
+  padding: 16px;
+  border-radius: 14px;
+  background: linear-gradient(#ffd400, #efbe00);
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
 }
 
-/* SERVICES */
-.sectionTitle{
-  text-align:center;
-  font-size:20px;
-  font-weight:900;
-  margin:14px 0 10px;
+/* ===== SECTION TITLE ===== */
+.sectionTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 14px 0 10px;
 }
 
-.servicesGrid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
+/* ===== SERVICES GRID ===== */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
-.serviceCard{
-  background:#f7f7f7;
-  border-radius:12px;
-  padding:12px 12px 12px 38px;
-  position:relative;
-  box-shadow:0 3px 8px rgba(0,0,0,.08);
+.serviceCard {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 12px 12px 12px 38px;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0,0,0,.08);
 }
 
-.serviceCard::before{
-  content:"➤";
-  position:absolute;
-  left:10px;
-  top:12px;
-  font-size:20px;
-  color:#19e600;
-  font-weight:900;
+.serviceCard::before {
+  content: "➤";
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 20px;
+  color: #19e600;
+  font-weight: 900;
 }
 
-.serviceTitle{
-  font-size:14px;
-  font-weight:900;
+.serviceTitle {
+  font-size: 14px;
+  font-weight: 900;
 }
 
-.serviceSub{
-  font-size:12px;
-  color:#666;
-  margin-top:3px;
+.serviceSub {
+  font-size: 12px;
+  color: #666;
+  margin-top: 3px;
 }
 
-/* ===== FIXED GAP (IMPORTANT) ===== */
-.navBubbles{
-  margin-top:10px; /* 🔥 was HUGE before */
-  display:flex;
-  gap:10px;
-  justify-content:space-between;
+/* ===== GREEN BUTTONS (FIXED GAP) ===== */
+.navBubbles {
+  margin-top: 10px; /* tight spacing */
+  display: flex;
+  gap: 10px;
 }
 
-/* BUBBLES */
-.bubble{
-  flex:1;
-  text-align:center;
-  padding:12px 8px;
-  border-radius:999px;
-  background:linear-gradient(#19e600,#0f7a16);
-  color:#000;
-  font-size:14px;
-  font-weight:900;
-  border:3px solid #ffd400;
-  text-decoration:none;
+.bubble {
+  flex: 1;
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: 999px;
+  background: linear-gradient(#19e600, #0f7a16);
+  color: #000;
+  font-size: 14px;
+  font-weight: 900;
+  border: 3px solid #ffd400;
+  text-decoration: none;
 }
 
 /* ===== BELOW FOLD ===== */
-.contentSection{
-  margin-top:40px;
+.contentSection {
+  margin-top: 40px;
 }
 
-.contentSection h2{
-  font-size:24px;
-  font-weight:900;
-  margin-bottom:8px;
+.contentSection h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 8px;
 }
 
-.brandTagline{
-  font-size:18px;
-  font-weight:900;
-  color:#f0be00;
-  margin-bottom:12px;
+.brandTagline {
+  font-size: 18px;
+  font-weight: 900;
+  color: #f0be00;
+  margin-bottom: 12px;
 }
 
-.contentSection p{
-  font-size:16px;
-  line-height:1.5;
-  color:#333;
-  margin-bottom:14px;
+.contentSection p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 14px;
 }
 
-/* REVIEWS */
-.reviewBox{
-  background:#fff;
-  border-radius:16px;
-  padding:20px;
-  text-align:center;
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
+/* ===== REVIEWS ===== */
+.reviewBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
 }
 
-.reviewBadge{
-  width:90px;
-  height:90px;
-  margin:0 auto 10px;
-  border-radius:50%;
-  box-shadow:0 0 0 6px #fbbc04;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
+.googleWord {
+  font-size: 22px;
+  color: #4285f4;
+  margin-bottom: 10px;
 }
 
-.reviewRating{
-  font-size:28px;
-  font-weight:900;
+.reviewBadge {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #fbbc04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.reviewStars{
-  font-size:22px;
-  color:#fbbc04;
-  margin-bottom:8px;
+.reviewRating {
+  font-size: 28px;
+  font-weight: 900;
 }
 
-.reviewButton{
-  display:inline-block;
-  padding:12px 18px;
-  background:#4285f4;
-  color:#fff;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:700;
+.reviewStars {
+  font-size: 22px;
+  color: #fbbc04;
+  margin-bottom: 8px;
 }
 
-/* MAP */
-.mapWrap{
-  border-radius:12px;
-  overflow:hidden;
-  margin-bottom:12px;
+.reviewVerified {
+  background: #e8f0fe;
+  color: #1967d2;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.reviewButton {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #4285f4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ===== MAP ===== */
+.mapWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
 }
