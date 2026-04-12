@@ -1,24 +1,32 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
   background: #f3f3f3;
   color: #111;
 }
 
+/* CONTAINER */
 .container {
   max-width: 430px;
   margin: auto;
   padding: 10px 14px 30px;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
   text-align: center;
 }
 
 .logo {
   width: 100%;
-  max-width: 380px;
+  max-width: 420px; /* bigger hero */
   display: block;
   margin: 0 auto;
 }
@@ -28,13 +36,15 @@ body {
   font-size: 26px;
   font-weight: 900;
   color: #1f9a34;
-  margin-top: 8px;
+  margin-top: 6px;
+  text-align: center;
 }
 
 .heroSub {
   font-size: 14px;
   color: #666;
-  margin-top: 6px;
+  margin-top: 4px;
+  text-align: center;
 }
 
 /* CALL BUTTON */
@@ -52,12 +62,16 @@ body {
   text-decoration: none;
 }
 
-/* SERVICES */
+/* ===== SERVICES ===== */
+.servicesSection {
+  margin-top: 8px;
+}
+
 .sectionTitle {
   text-align: center;
   font-size: 20px;
   font-weight: 900;
-  margin: 14px 0 10px;
+  margin: 10px 0;
 }
 
 .servicesGrid {
@@ -90,13 +104,14 @@ body {
 .serviceSub {
   font-size: 12px;
   color: #666;
+  margin-top: 3px;
 }
 
-/* GREEN BUTTONS */
+/* ===== GREEN BUTTONS ===== */
 .navBubbles {
   display: flex;
   gap: 10px;
-  margin-top: 12px;
+  margin-top: 8px; /* tight spacing */
 }
 
 .bubble {
@@ -109,4 +124,66 @@ body {
   font-weight: 900;
   border: 3px solid #ffd400;
   text-decoration: none;
+}
+
+/* ===== BELOW FOLD ===== */
+.contentSection {
+  margin-top: 40px;
+}
+
+.contentSection h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.brandTagline {
+  font-size: 18px;
+  font-weight: 900;
+  color: #f0be00;
+  margin-bottom: 12px;
+}
+
+.contentSection p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+/* ===== REVIEWS ===== */
+.reviewBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.reviewBadge {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #fbbc04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reviewRating {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.reviewStars {
+  font-size: 22px;
+  color: #fbbc04;
+}
+
+/* ===== MAP ===== */
+.mapWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
 }
