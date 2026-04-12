@@ -26,6 +26,11 @@
   <a href="tel:+12038897558" class="call-btn">
     📞 Call Now: 203-889-7558
   </a>
+
+  <!-- ⭐ REVIEWS CTA -->
+  <a href="https://maps.app.goo.gl/tq352xUsoRFX92cs5" target="_blank" class="call-btn">
+    ⭐ Read Our 775+ 5-Star Reviews in Stamford
+  </a>
 </div>
 
 <!-- SERVICES -->
@@ -92,9 +97,42 @@
   </ul>
 
   <p>
-    At 2 Young Studs Moving – Stamford, we pride ourselves on reliability and consistency.
-    Our team shows up on time, delivers professional service, and keeps every move simple and stress free.
+    Looking for reliable Stamford movers? 2 Young Studs Moving has been proudly owned
+    and operated since 2004, completing over 55,000 moves across Connecticut.
   </p>
+
+  <p>
+    We specialize in apartment moves, home moves, same day moving, and last minute moves
+    throughout Stamford and all of Fairfield County.
+  </p>
+
+  <p>
+    At 2 Young Studs Moving, we pride ourselves on the two things customers care about most:
+    no hidden fees and always showing up.
+  </p>
+
+  <p>
+    In an industry where missed appointments and last minute cancellations happen far too often,
+    we’ve built our reputation on reliability and consistency.
+  </p>
+
+  <p>
+    Our friendly and professional movers are known for being easy to work with, flexible,
+    and focused on getting your move done quickly and efficiently.
+  </p>
+
+  <!-- EIN PRESS EMBED -->
+  <div style="margin-top:15px;">
+    <button onclick="togglePress()" style="width:100%; padding:12px; border-radius:10px; background:#2e7d32; color:white; border:none; font-weight:bold;">
+      Featured in EIN Press (Tap to View)
+    </button>
+
+    <div id="press" style="display:none; margin-top:10px;">
+      <iframe src="https://www.einpresswire.com/article/901876835/2-young-studs-moving-reviews-highlight-verified-customer-feedback-across-connecticut"
+        width="100%" height="300" style="border:0;">
+      </iframe>
+    </div>
+  </div>
 </div>
 
 <!-- REVIEWS -->
@@ -104,13 +142,25 @@
   <div class="review-box">
     <div class="rating">4.6</div>
     <div class="stars">★★★★★</div>
+
     <p>Verified Google Reviews across Connecticut</p>
+
+    <a href="https://maps.app.goo.gl/tq352xUsoRFX92cs5" target="_blank" class="call-btn">
+      ⭐ Read All 775+ Reviews
+    </a>
   </div>
 </div>
 
 <!-- SERVICE AREA -->
 <div id="areas" class="section">
   <h2>Service Area</h2>
+
+  <div style="border-radius:12px; overflow:hidden; margin-bottom:10px;">
+    <iframe src="https://www.google.com/maps?q=Stamford,CT&output=embed"
+      width="100%" height="250" style="border:0;">
+    </iframe>
+  </div>
+
   <p class="service-area">
     Stamford • Greenwich • Darien • Norwalk • New Canaan • Westport • Wilton • Fairfield County
   </p>
@@ -119,10 +169,18 @@
 <!-- POLICIES -->
 <div id="policies" class="section">
   <h2>Moving Policies</h2>
+
   <p class="policies">
     No hidden fees. No surprise charges. Clear pricing and dependable service on every move.
   </p>
 </div>
+
+<script>
+function togglePress() {
+  var x = document.getElementById("press");
+  x.style.display = (x.style.display === "block") ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
