@@ -5,283 +5,176 @@
   box-sizing: border-box;
 }
 
-/* BASE */
+/* BODY */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f3f3f3;
-  color: #111;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
 }
 
+/* MAIN CONTAINER */
 .container {
-  max-width: 430px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 10px 12px 28px;
+  padding: 16px;
 }
 
-/* TOP SECTION */
+/* TOP SECTION (CONTROLS THE FOLD) */
 .topSection {
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* CRITICAL FOR FOLD */
 }
 
-/* HERO */
-.hero {
-  padding-top: 4px;
-}
-
+/* HERO IMAGE */
 .logo {
   width: 100%;
-  max-width: 340px;
-  height: auto;
+  max-width: 360px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 /* HEADLINE */
 .heroText {
-  margin-top: 8px;
+  text-align: center;
+  color: #1e8e3e;
   font-size: 28px;
-  line-height: 1.12;
-  font-weight: 900;
-  color: #1f9a34;
+  font-weight: 800;
+  margin-top: 6px;
 }
 
+/* SUBTEXT */
 .heroSub {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.35;
-  color: #5a5a5a;
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  margin-top: 8px;
 }
 
 /* CALL BUTTON */
 .callButton {
   display: block;
   width: 100%;
-  margin: 14px auto 0;
-  padding: 16px 14px;
-  border-radius: 14px;
-  background: linear-gradient(#ffd400, #efbe00);
+  text-align: center;
+  background: #f4c400;
   color: #000;
-  text-decoration: none;
+  font-weight: 800;
   font-size: 18px;
-  font-weight: 900;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* SERVICES */
-.servicesSection {
+/* SECTION TITLE */
+.sectionTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
   margin-top: 18px;
 }
 
-.sectionTitle {
-  font-size: 22px;
-  line-height: 1.12;
-  font-weight: 900;
-  color: #111;
-  margin-bottom: 14px;
-}
-
+/* SERVICES GRID */
 .servicesGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-}
-
-.serviceCard {
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  text-align: left;
-  background: #f7f7f7;
-  border-radius: 14px;
-  padding: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-}
-
-.arrow {
-  flex: 0 0 auto;
-  font-size: 22px;
-  line-height: 1;
-  color: #1fe600;
-  font-weight: 900;
-  margin-top: 1px;
-}
-
-.serviceText strong {
-  display: block;
-  font-size: 15px;
-  line-height: 1.15;
-  font-weight: 900;
-  color: #111;
-}
-
-.serviceText span {
-  display: block;
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 1.2;
-  color: #5c5c5c;
-}
-
-/* BUBBLES */
-.navBubbles {
   margin-top: 14px;
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
 }
 
+/* SERVICE ITEM */
+.serviceItem {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* GREEN ARROW */
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 12px solid #00c400;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  margin-right: 10px;
+}
+
+/* SERVICE TEXT */
+.serviceText {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceTitle {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.serviceSub {
+  font-size: 13px;
+  color: #555;
+}
+
+/* NAV BUBBLES (LOCKED TO FOLD) */
+.navBubbles {
+  margin-top: auto; /* PUSHES TO BOTTOM */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+/* GREEN BUTTONS */
 .bubble {
   flex: 1;
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px 10px;
-  border-radius: 999px;
-  background: linear-gradient(#19e600, #0f7a16);
+  text-align: center;
+  background: #00c400;
   color: #000;
-  font-size: 14px;
-  font-weight: 900;
-  border: 3px solid #ffd400;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
+  font-weight: 800;
+  padding: 12px 8px;
+  border-radius: 30px;
+  border: 3px solid #f4c400;
+  text-decoration: none;
 }
 
-/* CONTENT SECTIONS */
+/* LOWER SECTION */
 .contentSection {
-  margin-top: 44px;
-  text-align: left;
+  padding: 20px 0;
 }
 
-.contentSection h2 {
-  font-size: 24px;
-  line-height: 1.15;
-  font-weight: 900;
-  margin-bottom: 12px;
-  color: #111;
+/* WHY US TITLE */
+.whyTitle {
+  font-size: 26px;
+  font-weight: 800;
 }
 
-.contentSection p {
-  font-size: 16px;
-  line-height: 1.55;
-  color: #333;
-  margin-bottom: 16px;
-}
-
-.brandTitle {
-  margin-bottom: 6px;
-}
-
-.brandTagline {
+/* TAGLINE */
+.whyTagline {
   font-size: 20px;
-  line-height: 1.15;
   font-weight: 900;
-  color: #f0be00;
+  color: #f4c400;
+  margin: 8px 0 14px 0;
+}
+
+/* PARAGRAPH */
+.textBlock {
+  font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 14px;
 }
 
 /* REVIEWS */
-.reviewBox {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 22px 18px;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
-
-.googleWord {
-  font-size: 24px;
-  font-weight: 700;
-  color: #4285f4;
-  margin-bottom: 12px;
-}
-
-.reviewBadge {
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 12px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0 0 6px #fbbc04, 0 6px 18px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.reviewRating {
-  font-size: 30px;
-  font-weight: 900;
-  color: #111;
-  line-height: 1;
-}
-
-.reviewSmall {
-  font-size: 12px;
-  color: #666;
-  margin-top: 4px;
-}
-
-.reviewStars {
-  font-size: 24px;
-  color: #fbbc04;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
-}
-
-.reviewVerified {
-  display: inline-block;
-  background: #e8f0fe;
-  color: #1967d2;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
 .reviewText {
-  text-align: center;
-  margin-bottom: 14px;
+  font-size: 16px;
+  margin-top: 6px;
 }
 
-.reviewButton {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #4285f4;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-/* MAP */
-.mapWrap {
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  margin-bottom: 14px;
-}
-
-/* SMALLER PHONES */
-@media (max-width: 380px) {
-  .heroText {
-    font-size: 25px;
-  }
-
-  .sectionTitle {
-    font-size: 20px;
-  }
-
-  .serviceText strong {
-    font-size: 14px;
-  }
-
-  .serviceText span {
-    font-size: 11px;
-  }
-
-  .bubble {
-    font-size: 13px;
-    padding: 11px 8px;
-  }
+/* SERVICE AREA */
+.serviceArea {
+  font-size: 15px;
+  margin-top: 6px;
+  color: #333;
 }
