@@ -411,17 +411,6 @@ body {
   margin-bottom: 14px;
 }
 
-/* BUTTON */
-.google-btn {
-  display: block;
-  background: linear-gradient(#f7c948, #f2b705);
-  color: black;
-  text-decoration: none;
-  padding: 14px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 16px;
-}
 /* PULSE EFFECT */
 @keyframes pulseGlow {
   0% {
@@ -515,7 +504,7 @@ body {
     transform: scale(1);
   }
 } 
-}
+
 .google-badge {
   transition: transform 0.3s ease;
 }
