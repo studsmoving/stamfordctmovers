@@ -299,10 +299,10 @@ function focusReviews() {
 
   // 🔒 freeze EVERYTHING except review box
   document.querySelectorAll('body *').forEach(el => {
-    if (!el.closest('.google-badge')) {
-      el.style.opacity = '0.2';
-    }
-  });
+  if (!el.closest('.google-badge')) {
+    el.style.opacity = '0.2';
+  }
+});
 
   // 🌟 glow immediately
   if (reviews) {
