@@ -575,3 +575,6 @@ body {
   color: #666;
   font-weight: 600;
 }
+.section {
+  overflow: visible;   /* 🔥 prevents clipping */
+}
