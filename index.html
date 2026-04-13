@@ -292,17 +292,32 @@ function focusReviews() {
     navigator.vibrate(15);
   }
 
-  setTimeout(() => {
+  // 🔒 freeze everything except review box
+  document.querySelectorAll('.section').forEach(sec => {
+    if (!sec.querySelector('.google-badge')) {
+      sec.style.opacity = '0.2';
+    }
+  });
 
+  // 🌟 glow immediately
   if (reviews) {
     reviews.classList.add('glow');
-
-    setTimeout(() => {
-      reviews.classList.remove('glow');
-    }, 600);
   }
 
-}, 1000);
+  // ⏱ remove glow after 0.6s
+  setTimeout(() => {
+    if (reviews) {
+      reviews.classList.remove('glow');
+    }
+  }, 600);
+
+  // ⏱ unfreeze after 1 second
+  setTimeout(() => {
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.style.opacity = '1';
+    });
+  }, 1000);
+}
 
 }
 
