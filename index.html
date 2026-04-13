@@ -265,32 +265,51 @@ function toggleEin() {
 <script>
 function focusReviews() {
 
+  const reviews = document.getElementById('reviews');
+
   // vibration
   if (navigator.vibrate) {
     navigator.vibrate(15);
   }
 
-  // wait for scroll
+  // delay so scroll finishes first
   setTimeout(() => {
 
+    // fade everything
     document.querySelectorAll('.section').forEach(sec => {
       sec.style.opacity = '0.2';
     });
 
-    const reviews = document.getElementById('reviews');
-    if (reviews) 
-reviews.style.transform = "scale(1.03)";
-{
+    // highlight reviews
+    if (reviews) {
       reviews.style.opacity = '1';
+      reviews.style.transform = "scale(1.03)";
+      reviews.classList.add('glow');
     }
 
-    // Unlock when user scrolls OR taps anywhere
+  }, 100);
+}
+
+
+// unlock when user interacts
 function unlockSections() {
+
+  const reviews = document.getElementById('reviews');
+
   document.querySelectorAll('.section').forEach(sec => {
     sec.style.opacity = '1';
   });
-  reviews.style.transform = "scale(1)";
+
+  if (reviews) {
+    reviews.style.transform = "scale(1)";
+    reviews.classList.remove('glow');
+  }
 }
+
+
+// trigger unlock once
+window.addEventListener('scroll', unlockSections, { once: true });
+document.addEventListener('click', unlockSections, { once: true });
 
 // Scroll unlock
 window.addEventListener('scroll', unlockSections, { once: true });
