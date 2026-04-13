@@ -1039,3 +1039,7 @@ body {
 .review-quote {
   opacity: 1 !important;
 }
+.review-quote {
+  margin-bottom: 6px !important;
+  padding-bottom: 10px !important;
+}
