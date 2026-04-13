@@ -307,11 +307,7 @@ function unlockSections() {
     reviews.classList.remove('glow');
   }
 }
-
-
-// 🔥 STRONGER TRIGGERS (mobile-safe)
-window.addEventListener('scroll', unlockSections, { once: true });
-window.addEventListener('touchstart', unlockSections, { once: true });
-document.addEventListener('click', unlockSections, { once: true });
+// 🔥 FORCE unlock on ANY interaction
+['scroll', 'touchstart', 'touchmove
 </script>
 </html>
