@@ -254,8 +254,8 @@ Moving to a new place should be fun, exciting, and easy. Whether you have a loca
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ✅ vibration for ALL call buttons
-  document.querySelectorAll('a[href^="tel:"]').forEach(btn => {
+  // ✅ vibrate ALL links (green + call buttons)
+  document.querySelectorAll('a').forEach(btn => {
     btn.addEventListener('click', () => {
       if (navigator.vibrate) {
         navigator.vibrate(15);
@@ -273,7 +273,6 @@ function toggleEin() {
 
 // Reviews focus
 function focusReviews() {
-
   const reviews = document.querySelector('.google-badge');
 
   if (navigator.vibrate) {
