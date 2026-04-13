@@ -496,3 +496,23 @@ body {
     transform: translateY(0);
   }
 }
+/* gold glow effect */
+#reviews.glow {
+  animation: goldPulse 0.6s ease;
+}
+
+/* pulse animation */
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 200, 0, 0);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 200, 0, 0.7);
+    transform: scale(1.04);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 200, 0, 0);
+    transform: scale(1);
+  }
+}
