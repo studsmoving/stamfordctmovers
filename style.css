@@ -623,4 +623,21 @@ body {
 .section + .google-badge {
   margin-top: -18px !important;
 }
+/* 🔥 tighten spacing above Molly review */
+#reviews {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+/* reduce space under Google badge */
+.google-badge {
+  margin-bottom: 10px;
+}
+
+/* bring Molly review UP */
+.review-quote {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 12px;
+}
 
