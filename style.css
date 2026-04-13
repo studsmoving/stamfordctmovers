@@ -999,3 +999,18 @@ body {
   margin: 12px 10px 18px !important;
   padding: 16px !important;
 }
+/* 🚨 FINAL MOLLY FIX (FOR REAL THIS TIME) */
+
+.google-badge {
+  margin-bottom: 18px !important;   /* creates space for Molly */
+}
+
+.review-quote {
+  margin-top: 12px !important;
+  margin-bottom: 20px !important;
+
+  display: block !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
