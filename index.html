@@ -262,4 +262,33 @@ function toggleEin() {
 }
 </script>
 
+<script>
+function focusReviews() {
+
+  // vibration
+  if (navigator.vibrate) {
+    navigator.vibrate(15);
+  }
+
+  // wait for scroll
+  setTimeout(() => {
+
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.style.opacity = '0.2';
+    });
+
+    const reviews = document.getElementById('reviews');
+    if (reviews) {
+      reviews.style.opacity = '1';
+    }
+
+    setTimeout(() => {
+      document.querySelectorAll('.section').forEach(sec => {
+        sec.style.opacity = '1';
+      });
+    }, 2000);
+
+  }, 100);
+}
+</script>
 </html>
