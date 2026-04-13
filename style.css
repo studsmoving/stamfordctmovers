@@ -619,4 +619,8 @@ body {
 .section p {
   margin-bottom: 8px;   /* 🔥 was too large */
 }
+/* 🔥 FORCE tight spacing between text and reviews */
+.section + .google-badge {
+  margin-top: -18px !important;
+}
 
