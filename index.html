@@ -297,12 +297,15 @@ function focusReviews() {
     navigator.vibrate(15);
   }
 
-  // 🔒 freeze EVERYTHING except review box
-  document.querySelectorAll('body *').forEach(el => {
-  if (!el.closest('.google-badge')) {
-    el.style.opacity = '0.2';
+ // 🔒 freeze everything EXCEPT review box
+document.querySelectorAll('.section').forEach(sec => {
+  if (!sec.contains(document.querySelector('.google-badge'))) {
+    sec.style.opacity = '0.2';
   }
 });
+
+// keep review badge fully visible
+
 
   // 🌟 glow immediately
   if (reviews) {
