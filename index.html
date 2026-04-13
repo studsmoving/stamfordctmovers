@@ -320,11 +320,37 @@ document.querySelectorAll('.section').forEach(sec => {
   }, 600);
 
   // ⏱ unfreeze after 1 second
-  setTimeout(() => {
-    document.querySelectorAll('body *').forEach(el => {
-      el.style.opacity = '';
-    });
-  }, 1000);
+  // freeze immediately
+if (navigator.vibrate) {
+  navigator.vibrate(15);
+}
+
+// freeze everything except badge
+document.querySelectorAll('.section').forEach(sec => {
+  if (!sec.contains(document.querySelector('.google-badge'))) {
+    sec.style.opacity = '0.2';
+  }
+});
+
+// glow immediately
+if (reviews) {
+  reviews.classList.add('glow');
+}
+
+// THEN scroll after delay
+setTimeout(() => {
+  window.location.href = "https://maps.app.goo.gl/tq352xUsoRFX92cs5";
+}, 900);
+
+// unfreeze
+setTimeout(() => {
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.style.opacity = '';
+  });
+  if (reviews) {
+    reviews.classList.remove('glow');
+  }
+}, 1000);
 }
 
 </script>
