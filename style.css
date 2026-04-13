@@ -610,7 +610,7 @@ body {
 }
 
 .google-badge {
-  padding: 18px;   /* 🔥 slightly smaller box */
+  padding: 12px 14px;
 }
 .google-badge {
   margin-top: 0;   /* 🔥 removes any added space */
@@ -1002,12 +1002,12 @@ body {
 /* 🚨 FINAL MOLLY FIX (FOR REAL THIS TIME) */
 
 .google-badge {
-  margin-bottom: 18px !important;   /* creates space for Molly */
+  margin-bottom: 8px !important;   /* creates space for Molly */
 }
 
 .review-quote {
-  margin-top: 12px !important;
-  margin-bottom: 20px !important;
+  margin-top: 0px !important;
+  margin-bottom: 12px !important;
 
   display: block !important;
   height: auto !important;
