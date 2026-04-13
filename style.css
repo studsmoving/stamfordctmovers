@@ -497,7 +497,7 @@ body {
   }
 }
 /* gold glow effect */
-.review-box.glow {
+.google-badge.glow {
   animation: goldPulse 0.7s ease;
 }
 
