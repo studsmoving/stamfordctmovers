@@ -449,6 +449,9 @@ body {
 
   animation: pulseGlow 2.2s infinite;
 }
+.review-btn:hover {
+  transform: scale(1.05);
+}
 
 /* TAP EFFECT FOR GREEN BUTTONS */
 .quick-links a {
