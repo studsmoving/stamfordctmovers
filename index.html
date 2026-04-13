@@ -258,7 +258,7 @@ Moving to a new place should be fun, exciting, and easy. Whether you have a loca
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ✅ vibrate ALL links (green + call buttons)
+  // 🔊 vibrate ALL links (green + call buttons)
   document.querySelectorAll('a').forEach(btn => {
     btn.addEventListener('click', () => {
       if (navigator.vibrate) {
@@ -266,6 +266,47 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // 🔥 scroll-triggered review spotlight (runs once)
+  const reviewSection = document.getElementById('reviews');
+  let reviewTriggered = false;
+
+  if (reviewSection) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !reviewTriggered) {
+          reviewTriggered = true;
+
+          const reviews = document.querySelector('.google-badge');
+
+          // dim everything except reviews
+          document.querySelectorAll('.section').forEach(sec => {
+            if (!sec.contains(reviews)) {
+              sec.style.opacity = '0.2';
+            }
+          });
+
+          // glow
+          if (reviews) {
+            reviews.classList.add('glow');
+          }
+
+          // restore
+          setTimeout(() => {
+            document.querySelectorAll('.section').forEach(sec => {
+              sec.style.opacity = '';
+            });
+
+            if (reviews) {
+              reviews.classList.remove('glow');
+            }
+          }, 1000);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(reviewSection);
+  }
 
 });
 
@@ -275,7 +316,7 @@ function toggleEin() {
   box.style.display = (box.style.display === "block") ? "none" : "block";
 }
 
-// Reviews focus
+// ⭐ click-triggered review focus
 function focusReviews() {
   const reviews = document.querySelector('.google-badge');
 
