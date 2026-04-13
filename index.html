@@ -263,14 +263,19 @@ function toggleEin() {
 </script>
 
 <script>
+
+function vibrateTap() {
+  if (navigator.vibrate) {
+    navigator.vibrate(15);
+  }
+}
+
 function focusReviews() {
 
   const reviews = document.getElementById('reviews');
 
   // vibration
-  if (navigator.vibrate) {
-    navigator.vibrate(15);
-  }
+  vibrateTap();
 
   // delay so scroll finishes first
   setTimeout(() => {
@@ -307,17 +312,9 @@ function unlockSections() {
 }
 
 
-// trigger unlock once
+// unlock on interaction
 window.addEventListener('scroll', unlockSections, { once: true });
 document.addEventListener('click', unlockSections, { once: true });
 
-// Scroll unlock
-window.addEventListener('scroll', unlockSections, { once: true });
-
-// Tap anywhere unlock (mobile users)
-document.addEventListener('click', unlockSections, { once: true });
-
-  }, 100);
-}
 </script>
 </html>
