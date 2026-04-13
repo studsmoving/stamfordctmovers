@@ -34,11 +34,12 @@
 
 <!-- HERO -->
 <div class="hero">
-  <a href="tel:+12038897558" class="call-btn" onclick="vibrateClick()">
-  CALL +1-203-889-7558
-</a>
-    <img src="hero.png" class="hero-img">
+
+  <a href="tel:+12038897558" class="call-btn">
+    CALL +1-203-889-7558
   </a>
+
+  <img src="hero.png" class="hero-img">
 
   <h1>Stamford Movers You Can Trust</h1>
 
@@ -49,6 +50,7 @@
   <a href="tel:+12038897558" class="call-btn">
     📞 Call Now: 203-889-7558
   </a>
+
 </div>
 
 <!-- SERVICES -->
@@ -256,47 +258,18 @@ Moving to a new place should be fun, exciting, and easy. Whether you have a loca
 </div>
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-// NAV BUTTON CLICK (freeze + scroll)
-document.querySelectorAll('.nav-btn').forEach(btn => {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault();
-
-    const target = document.querySelector(this.getAttribute('href'));
-    this.classList.add('tap');
-
-    // 🔒 freeze everything except review box
-    document.querySelectorAll('body *').forEach(el => {
-      if (!el.closest('.google-badge')) {
-        el.style.opacity = '0.2';
+  // ✅ vibration for ALL call buttons
+  document.querySelectorAll('a[href^="tel:"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (navigator.vibrate) {
+        navigator.vibrate(15);
       }
     });
-
-    setTimeout(() => {
-      this.classList.remove('tap');
-
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 120);
-
-    // ⏱ unfreeze after 1 second
-    setTimeout(() => {
-      document.querySelectorAll('body *').forEach(el => {
-        el.style.opacity = '';
-      });
-    }, 1000);
   });
+
 });
-
-
-// 🔊 vibration
-function vibrateTap() {
-  if (navigator.vibrate) {
-    navigator.vibrate(15);
-  }
-}
-
 
 // EIN toggle
 function toggleEin() {
@@ -304,76 +277,35 @@ function toggleEin() {
   box.style.display = (box.style.display === "block") ? "none" : "block";
 }
 
-
-// ⭐ REVIEW FOCUS (main effect)
+// Reviews focus
 function focusReviews() {
 
   const reviews = document.querySelector('.google-badge');
 
-  // vibration
   if (navigator.vibrate) {
     navigator.vibrate(15);
   }
 
- // 🔒 freeze everything EXCEPT review box
-document.querySelectorAll('.section').forEach(sec => {
-  if (!sec.contains(document.querySelector('.google-badge'))) {
-    sec.style.opacity = '0.2';
-  }
-});
+  document.querySelectorAll('.section').forEach(sec => {
+    if (!sec.contains(reviews)) {
+      sec.style.opacity = '0.2';
+    }
+  });
 
-// keep review badge fully visible
-
-
-  // 🌟 glow immediately
   if (reviews) {
     reviews.classList.add('glow');
   }
 
-  // ⏱ remove glow after 0.6s
   setTimeout(() => {
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.style.opacity = '';
+    });
+
     if (reviews) {
       reviews.classList.remove('glow');
     }
-  }, 600);
-
-  // ⏱ unfreeze after 1 second
-  // freeze immediately
-if (navigator.vibrate) {
-  navigator.vibrate(15);
+  }, 1000);
 }
-
-// freeze everything except badge
-document.querySelectorAll('.section').forEach(sec => {
-  if (!sec.contains(document.querySelector('.google-badge'))) {
-    sec.style.opacity = '0.2';
-  }
-});
-
-// glow immediately
-if (reviews) {
-  reviews.classList.add('glow');
-}
-
-
-// unfreeze
-setTimeout(() => {
-  document.querySelectorAll('.section').forEach(sec => {
-    sec.style.opacity = '';
-  });
-  if (reviews) {
-    reviews.classList.remove('glow');
-  }
-}, 1000);
-}
-<script>
-function vibrateClick() {
-  if (navigator.vibrate) {
-    navigator.vibrate(15);
-  }
-}
-
-
 </script>
 </body>
 </html>
