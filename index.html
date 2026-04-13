@@ -263,7 +263,6 @@ function toggleEin() {
   box.style.display = (box.style.display === "block") ? "none" : "block";
 }
 </script>
-
 <script>
 
 function vibrateTap() {
@@ -279,8 +278,14 @@ function focusReviews() {
   // vibration
   vibrateTap();
 
-  // zoom + glow
+  // FADE everything else
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.style.opacity = '0.2';
+  });
+
+  // highlight reviews
   if (reviews) {
+    reviews.style.opacity = '1';
     reviews.style.transform = "scale(1.03)";
     reviews.style.transition = "transform 0.3s ease";
     reviews.classList.add('glow');
@@ -288,10 +293,14 @@ function focusReviews() {
 }
 
 
-// RESET when user scrolls OR taps anywhere
-function resetReviews() {
+// UNLOCK when user interacts
+function unlockSections() {
 
   const reviews = document.getElementById('reviews');
+
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.style.opacity = '1';
+  });
 
   if (reviews) {
     reviews.style.transform = "scale(1)";
@@ -300,9 +309,9 @@ function resetReviews() {
 }
 
 
-// unlock on FIRST interaction only
-window.addEventListener('scroll', resetReviews, { once: true });
-document.addEventListener('click', resetReviews, { once: true });
+// trigger unlock on scroll OR tap
+window.addEventListener('scroll', unlockSections, { once: true });
+document.addEventListener('click', unlockSections, { once: true });
 
 </script>
 </html>
