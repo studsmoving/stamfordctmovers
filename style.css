@@ -516,3 +516,10 @@ body {
   }
 } 
 }
+.google-badge {
+  transition: transform 0.3s ease;
+}
+
+.google-badge.glow {
+  transform: scale(1.05);
+}
