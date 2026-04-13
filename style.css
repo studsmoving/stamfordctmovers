@@ -557,7 +557,10 @@ body {
 
   opacity: 0;
   transform: translateY(10px);
-  animation: fadeIn 1s ease forwards;
+
+  animation: safeFadeIn 0.6s ease forwards;
+
+  will-change: opacity, transform; /* 🔥 KEY FIX */
 }
 
 /* ⭐ stars on top */
