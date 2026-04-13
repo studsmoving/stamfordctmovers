@@ -255,7 +255,7 @@ function vibrateTap() {
   }
 }
 </script>
-</body>
+
 
 <script>
 function toggleEin() {
@@ -269,16 +269,16 @@ function vibrateTap() {
   if (navigator.vibrate) {
     navigator.vibrate(15);
   }
-}
-
 function focusReviews() {
 
   const reviews = document.getElementById('reviews');
 
   // vibration
-  vibrateTap();
+  if (navigator.vibrate) {
+    navigator.vibrate(15);
+  }
 
-  // FADE everything else
+  // freeze everything
   document.querySelectorAll('.section').forEach(sec => {
     sec.style.opacity = '0.2';
   });
@@ -287,31 +287,25 @@ function focusReviews() {
   if (reviews) {
     reviews.style.opacity = '1';
     reviews.style.transform = "scale(1.03)";
-    reviews.style.transition = "transform 0.3s ease";
     reviews.classList.add('glow');
   }
+
+  // unfreeze after 1 second
+  setTimeout(() => {
+
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.style.opacity = '1';
+    });
+
+    if (reviews) {
+      reviews.style.transform = "scale(1)";
+      reviews.classList.remove('glow');
+    }
+
+  }, 1000);
+
 }
 
-
-// UNLOCK when user interacts
-function unlockSections() {
-
-  const reviews = document.getElementById('reviews');
-
-  document.querySelectorAll('.section').forEach(sec => {
-    sec.style.opacity = '1';
-  });
-
-  if (reviews) {
-    reviews.style.transform = "scale(1)";
-    reviews.classList.remove('glow');
-  }
-}
-// 🔥 FORCE unlock on ANY interaction
-['scroll', 'touchstart', 'touchmove', 'click'].forEach(event => {
-
-  document.addEventListener(event, unlockSections);
-
-});
 </script>
+</body>
 </html>
