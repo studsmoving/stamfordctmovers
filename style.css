@@ -39,15 +39,23 @@ body {
 /* CALL BUTTON */
 .call-btn {
   display: block;
-  background: linear-gradient(#f7c948, #f2b705);
+  background: linear-gradient(145deg, #ffd84d, #f2b705);
   color: black;
   text-decoration: none;
   padding: 14px;
-  border-radius: 30px;
+  border-radius: 999px;
   font-weight: bold;
   font-size: 16px;
   width: 90%;
   margin: 0 auto 20px;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.6),
+    inset 0 -2px 6px rgba(0,0,0,0.15),
+    0 6px 14px rgba(0,0,0,0.2);
 }
 
 /* SERVICES */
@@ -101,199 +109,44 @@ body {
 }
 
 .quick-links a {
-  background: #18d400;
+  background: linear-gradient(145deg, #2cff2c, #18d400);
   border: 4px solid #f2b705;
-  border-radius: 30px;
+  border-radius: 999px;
 
-  display: flex;              /* 🔥 key fix */
-  align-items: center;       /* vertical center */
-  justify-content: center;   /* horizontal center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  height: 50px;              /* locks button height */
+  height: 50px;
   flex: 1;
 
   text-decoration: none;
   color: black;
 
-  font-weight: 800;          /* stronger than bold */
-  font-size: 15px;           /* slightly bigger */
+  font-weight: 800;
+  font-size: 15px;
   line-height: 1.1;
 
-  text-align: center;transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.5),
+    inset 0 -2px 6px rgba(0,0,0,0.2),
+    0 6px 14px rgba(0,0,0,0.25);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .quick-links a:active {
-  transform: scale(1.08);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transform: scale(0.96);
 }
+
 /* CONTENT */
 .section {
   padding: 15px;
-}
-
-.section h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.highlight {
-  color: #f2b705;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.bullets {
-  list-style: none;
-  padding: 0;
-}
-
-.bullets li {
-  margin-bottom: 8px;
-  padding-left: 18px;
-  position: relative;
-}
-
-.bullets li::before {
-  content: "➤";
-  position: absolute;
-  left: 0;
-  color: #18d400;
-}
-
-/* REVIEWS */
-.review-box {
-  background: #eaeaea;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-}
-#reviews {
-  transition: transform 0.3s ease;
-}
-
-.rating {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.stars {
-  margin: 5px 0;
-  font-size: 18px;
-}
-/* 🔥 REVIEWS GLOW EFFECT */
-#reviews.glow {
-  box-shadow: 0 0 0 rgba(242, 183, 5, 0.0);
-  animation: reviewGlow 1.2s ease-out;
-}
-
-@keyframes reviewGlow {
-  0% {
-    box-shadow: 0 0 0 rgba(242, 183, 5, 0);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(242, 183, 5, 0.7),
-                0 0 50px rgba(242, 183, 5, 0.4);
-  }
-  100% {
-    box-shadow: 0 0 0 rgba(242, 183, 5, 0);
-  }
-}
-
-/* SERVICE AREA */
-.service-area {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* POLICIES */
-.policies {
-  font-size: 14px;
-  line-height: 1.5;
-} 
-/* GREEN ARROW BULLETS */
-.bullets {
-  list-style: none;
-  padding: 0;
-}
-
-.bullets li {
-  margin-bottom: 8px;
-  padding-left: 18px;
-  position: relative;
-}
-
-.bullets li::before {
-  content: "➤";
-  position: absolute;
-  left: 0;
-  color: #18d400;
-}
-
-/* SMALL CALL BUTTONS */
-.call-mini {
-  display: block;
-  background: linear-gradient(#f7c948, #f2b705);
-  color: black;
-  text-decoration: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 13px;
-  width: fit-content;
-  margin: 14px auto;
-  text-align: center;
-}
-
-/* EIN SECTION */
-.ein-box {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.ein-text {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.ein-btn {
-  display: inline-block;
-  background: #2e7d32;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.ein-preview {
-  display: block;
-  position: relative;
-  margin-top: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.ein-preview img {
-  width: 100%;
-  display: block;
-  border-radius: 10px;
-}
-
-.ein-overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  text-align: center;
-  padding: 8px;
-  font-size: 13px;
-}
-
-/* GREEN ARROW FIX */
-.green-arrow {
-  color: #18d400;
-  font-weight: bold;
-  margin-right: 5px;
 }
 
 /* SMALL CALL BUTTON */
@@ -304,130 +157,24 @@ body {
 
 .mini-call-btn {
   display: inline-block;
-  background: linear-gradient(#f7c948, #f2b705);
+  background: linear-gradient(145deg, #ffd84d, #f2b705);
   color: black;
-  padding: 6px 18px;
-  border-radius: 20px;
-  font-size: 13px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.6),
+    inset 0 -2px 6px rgba(0,0,0,0.15),
+    0 6px 14px rgba(0,0,0,0.2);
 }
 
-/* EIN TEASER */
-.ein-preview {
-  width: 120px;
-  margin: 6px 0;
-  opacity: 0.85;
-}
-
-.ein-preview img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-/* EIN EXPAND */
-.ein-expanded {
-  display: none;
-  background: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.ein-headline {
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-.ein-read {
-  display: inline-block;
-  background: linear-gradient(#f7c948, #f2b705);
-  color: black;
-  padding: 5px 12px;
-  border-radius: 18px;
-  font-size: 12px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.ein-badge {
-  display: inline-block;
-  background: #111;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: bold;
-}
-.google-badge {
-  background: #fff;
-  border-radius: 16px;
-  padding: 22px;
-  text-align: center;
-
-  box-shadow: 0 8px 25px rgba(242, 183, 5, 0.35); /* ← THIS is the upgrade */
-  border: 3px solid #f2b705;
-}
-
-/* GOOGLE HEADER */
-.google-header {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-/* GOOGLE COLORS */
-.g-blue { color: #4285F4; }
-.g-red { color: #EA4335; }
-.g-yellow { color: #FBBC05; }
-.g-green { color: #34A853; }
-
-.google-rating {
-  font-size: 52px;
-  font-weight: 900;
-  margin: 5px 0;
-  letter-spacing: 1px;
-}
-
-/* STARS */
-.google-stars {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-}
-
-/* REVIEW COUNT */
-.google-count {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-/* SUBTEXT */
-.google-sub {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 14px;
-}
-
-/* PULSE EFFECT */
-@keyframes pulseGlow {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 8px 25px rgba(242, 183, 5, 0.35);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 12px 35px rgba(242, 183, 5, 0.6);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 8px 25px rgba(242, 183, 5, 0.35);
-  }
-}
-
-/* APPLY TO REVIEW BUTTON */
+/* REVIEW BUTTON */
 .review-btn {
   display: block;
   width: 80%;
@@ -435,209 +182,54 @@ body {
   margin: 20px auto 0;
   padding: 14px 20px;
 
-  background: linear-gradient(#f7c948, #f2b705);
+  background: linear-gradient(145deg, #ffd84d, #f2b705);
   color: black;
 
   font-weight: bold;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 999px;
 
   text-decoration: none;
   font-size: 16px;
 
-  box-shadow: 0 8px 25px rgba(242, 183, 5, 0.35);
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.6),
+    inset 0 -2px 6px rgba(0,0,0,0.15),
+    0 8px 25px rgba(242, 183, 5, 0.35);
 
   animation: pulseGlow 2.2s infinite;
 }
-.review-btn:hover {
-  transform: scale(1.05);
+
+/* ✨ GEL SHINE EFFECT */
+.call-btn::after,
+.mini-call-btn::after,
+.review-btn::after,
+.quick-links a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.35);
+  transform: skewX(-20deg);
+  transition: 0.4s;
 }
 
-/* TAP EFFECT FOR GREEN BUTTONS */
-.quick-links a {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+.call-btn:hover::after,
+.mini-call-btn:hover::after,
+.review-btn:hover::after,
+.quick-links a:hover::after {
+  left: 120%;
 }
 
+/* 👇 PRESS EFFECT */
+.call-btn:active,
+.mini-call-btn:active,
+.review-btn:active,
 .quick-links a:active {
-  transform: scale(1.08);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transform: scale(0.96);
 }
-/* paragraph under headline */
-.reviews-intro {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #444;
-  text-align: center;
-  margin: 10px 0 18px;
-  padding: 0 10px;
-}
-
-/* testimonial quote */
-.review-quote {
-  font-family: Georgia, serif;
-  font-size: 16px;
-  font-style: italic;
-  color: #222;
-  text-align: center;
-
-  margin: 10px 10px 10px;   /* 🔥 reduced top + bottom spacing */
-  padding: 14px;
-
-  border-left: 5px solid #f2b705;
-  background: linear-gradient(#fffdf5, #fff8dc);
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  border-radius: 10px;
-
-  opacity: 1;               /* 🔥 remove animation causing cutoff */
-  transform: none;
-}
-
-/* name under quote */
-.review-quote span {
-  display: block;
-  margin-top: 6px;
-  font-size: 14px;
-  font-style: normal;
-  color: #666;
-}
-
-/* animation */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* gold glow effect */
-.google-badge.glow {
-  animation: goldPulse 0.7s ease;
-}
-
-@keyframes goldPulse {
-  0% {
-    box-shadow: 0 0 0 rgba(255, 200, 0, 0);
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(255, 200, 0, 0.9);
-    transform: scale(1.05);
-  }
-  100% {
-    box-shadow: 0 0 0 rgba(255, 200, 0, 0);
-    transform: scale(1);
-  }
-} 
-
-.google-badge {
-  transition: transform 0.3s ease;
-}
-
-.google-badge.glow {
-  transform: scale(1.05);
-}
-
-.review-quote {
-  font-family: Georgia, serif;
-  font-size: 16px;
-  font-style: italic;
-  color: #222;
-  text-align: center;
-  margin: 25px 10px 35px;
-  padding: 16px;
-
-  border-left: 5px solid #f2b705;
-  background: linear-gradient(#fffdf5, #fff8dc);
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  border-radius: 10px;
-
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeIn 1s ease forwards;
-}
-
-/* ⭐ stars on top */
-.review-stars {
-  display: block;
-  font-size: 20px;
-  color: #f2b705;
-  margin-bottom: 8px;
-  letter-spacing: 2px;
-}
-
-/* ✔ verified line */
-.review-meta {
-  display: block;
-  margin-top: 10px;
-  font-size: 13px;
-  font-style: normal;
-  color: #666;
-  font-weight: 600;
-}
-.section {
-  overflow: visible;   /* 🔥 prevents clipping */
-}
-.google-header span:last-child {
-  color: #111;
-  font-weight: 600;
-}
-.google-header span:nth-child(1)::after { animation-delay: 0s; }
-.google-header span:nth-child(2)::after { animation-delay: 0.1s; }
-.google-header span:nth-child(3)::after { animation-delay: 0.2s; }
-.google-header span:nth-child(4)::after { animation-delay: 0.3s; }
-.google-header span:nth-child(5)::after { animation-delay: 0.4s; }
-.google-header span:nth-child(6)::after { animation-delay: 0.5s; }
-.g-blue { color: #4285F4; }
-.g-red { color: #EA4335; }
-.g-yellow { color: #FBBC05; }
-.g-green { color: #34A853; }
-.google-header {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
-}
-
-.google-badge {
-  margin-bottom: 8px;   /* 🔥 was too big */
-}
-
-.google-badge {
-  padding: 18px;   /* 🔥 slightly smaller box */
-}
-.google-badge {
-  margin-top: 0;   /* 🔥 removes any added space */
-}
-.section {
-  padding: 12px 15px;   /* 🔥 slightly tighter overall */
-}
-.section:last-of-type {
-  padding-bottom: 5px;   /* 🔥 trims the gap */
-}
-
-.section p {
-  margin-bottom: 8px;   /* 🔥 was too large */
-}
-/* 🔥 FORCE tight spacing between text and reviews */
-.section + .google-badge {
-  margin-top: -18px !important;
-}
-/* 🔥 tighten spacing above Molly review */
-#reviews {
-  padding-top: 8px;
-  padding-bottom: 10px;
-}
-
-/* reduce space under Google badge */
-.google-badge {
-  margin-bottom: 10px;
-}
-
-/* bring Molly review UP */
-.review-quote {
-  margin-top: 8px;
-  margin-bottom: 10px;
-  padding: 12px;
-}
-
