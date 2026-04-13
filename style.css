@@ -983,3 +983,19 @@ body {
   height: auto;
   overflow: visible;
 }
+/* 🚨 FINAL FIX – FORCE MOLLY TO SHOW FULLY */
+.review-quote {
+  display: block !important;
+
+  height: auto !important;
+  max-height: none !important;
+
+  overflow: visible !important;
+
+  contain: none !important;   /* 🔥 THIS overrides the hidden bug */
+
+  line-height: 1.6;
+
+  margin: 12px 10px 18px !important;
+  padding: 16px !important;
+}
