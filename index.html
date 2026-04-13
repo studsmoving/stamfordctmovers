@@ -310,7 +310,7 @@ function unlockSections() {
 // 🔥 FORCE unlock on ANY interaction
 ['scroll', 'touchstart', 'touchmove', 'click'].forEach(event => {
 
-  window.addEventListener(event, unlockSections);
+  document.addEventListener(event, unlockSections);
 
 });
 </script>
