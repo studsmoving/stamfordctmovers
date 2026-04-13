@@ -285,10 +285,13 @@ reviews.style.transform = "scale(1.03)";
     }
 
     setTimeout(() => {
-      document.querySelectorAll('.section').forEach(sec => {
-        sec.style.opacity = '1';
-      });
-    }, 2000);
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.style.opacity = '1';
+  });
+
+  reviews.style.transform = "scale(1)"; // 👈 ADD THIS LINE HERE
+
+}, 2000);
 
   }, 100);
 }
