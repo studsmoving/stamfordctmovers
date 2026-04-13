@@ -1014,3 +1014,15 @@ body {
   max-height: none !important;
   overflow: visible !important;
 }
+/* 🔥 LOCK REVIEW UNDER GOOGLE BADGE (FINAL FIX) */
+.reviews-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+/* tighten Molly spacing */
+.reviews-block .review-quote {
+  margin: 6px 10px 12px;
+}
