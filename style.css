@@ -496,7 +496,7 @@ body {
 /* name under quote */
 .review-quote span {
   display: block;
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 14px;
   font-style: normal;
   color: #666;
@@ -598,3 +598,13 @@ body {
   margin-bottom: 8px;
   letter-spacing: 0.5px;
 }
+
+.google-badge {
+  margin-bottom: 8px;   /* 🔥 was too big */
+}
+
+.google-badge {
+  padding: 18px;   /* 🔥 slightly smaller box */
+}
+
+
