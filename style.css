@@ -533,3 +533,42 @@ body {
 .google-badge.glow {
   transform: scale(1.05);
 }
+
+.review-quote {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #222;
+  text-align: center;
+  margin: 25px 10px 35px;
+  padding: 16px;
+
+  border-left: 5px solid #f2b705;
+  background: linear-gradient(#fffdf5, #fff8dc);
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  border-radius: 10px;
+
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 1s ease forwards;
+}
+
+/* ⭐ stars on top */
+.review-stars {
+  display: block;
+  font-size: 20px;
+  color: #f2b705;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+/* ✔ verified line */
+.review-meta {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-style: normal;
+  color: #666;
+  font-weight: 600;
+}
