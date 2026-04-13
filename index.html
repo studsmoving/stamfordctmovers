@@ -288,17 +288,12 @@ function focusReviews() {
 
   setTimeout(() => {
 
-  // highlight reviews (PASTE YOUR CUT CODE HERE)
   if (reviews) {
-    reviews.style.opacity = '1';
-    reviews.style.transform = "scale(1.03)";
     reviews.classList.add('glow');
 
-    // return to normal after quick pop
     setTimeout(() => {
-      reviews.style.transform = "scale(1)";
       reviews.classList.remove('glow');
-    }, 300);
+    }, 600);
   }
 
 }, 1000);
