@@ -284,14 +284,19 @@ reviews.style.transform = "scale(1.03)";
       reviews.style.opacity = '1';
     }
 
-    setTimeout(() => {
+    // Unlock when user scrolls OR taps anywhere
+function unlockSections() {
   document.querySelectorAll('.section').forEach(sec => {
     sec.style.opacity = '1';
   });
+  reviews.style.transform = "scale(1)";
+}
 
-  reviews.style.transform = "scale(1)"; // 👈 ADD THIS LINE HERE
+// Scroll unlock
+window.addEventListener('scroll', unlockSections, { once: true });
 
-}, 2000);
+// Tap anywhere unlock (mobile users)
+document.addEventListener('click', unlockSections, { once: true });
 
   }, 100);
 }
