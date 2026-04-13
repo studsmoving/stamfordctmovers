@@ -781,3 +781,23 @@ body {
   white-space: nowrap;    /* prevents wrapping */
 }
 
+/* FORCE HEADLINES TO ONE LINE ON MOBILE */
+.hero h1,
+.services h2 {
+  font-size: 22px;          /* slightly smaller */
+  line-height: 1.05;
+  white-space: nowrap;      /* 🚨 prevents wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;  /* safety if ultra tight */
+  letter-spacing: -0.3px;
+}
+
+/* tighten spacing above/below */
+.hero h1 {
+  margin-bottom: 2px !important;
+}
+
+.services h2 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
