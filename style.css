@@ -954,3 +954,24 @@ body {
 .ein-trigger:active {
   opacity: 0.7;
 }
+
+/* 🔥 FIX REVIEW CUT-OFF (FINAL) */
+.review-quote {
+  display: block;
+  height: auto !important;
+  max-height: none !important;
+
+  overflow: visible !important;
+
+  padding-bottom: 18px; /* extra breathing room */
+  margin-bottom: 18px;
+
+  line-height: 1.5;
+}
+
+/* 🔥 REMOVE ANY CLIPPING FROM PARENTS */
+.section,
+.google-badge,
+#reviews {
+  overflow: visible !important;
+}
