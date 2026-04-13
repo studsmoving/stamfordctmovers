@@ -1051,3 +1051,29 @@ body {
 #reviews {
   padding-bottom: 30px !important;
 }
+
+/* 🔥 SHRINK GOOGLE BADGE HEIGHT */
+.google-rating {
+  font-size: 44px !important;
+  margin: 2px 0 !important;
+}
+
+.google-stars {
+  font-size: 18px !important;
+  margin-bottom: 2px !important;
+}
+
+.google-count {
+  font-size: 14px !important;
+  margin-bottom: 4px !important;
+}
+
+.google-sub {
+  font-size: 12px !important;
+  margin-bottom: 8px !important;
+}
+
+.review-btn {
+  margin-top: 10px !important;
+  padding: 10px 16px !important;
+}
