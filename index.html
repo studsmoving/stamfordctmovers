@@ -237,7 +237,7 @@ Moving to a new place should be fun, exciting, and easy. Whether you have a loca
   </p>
 </div>
 
-<script>
+script>
 document.querySelectorAll('.nav-btn').forEach(btn => {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -246,6 +246,12 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 
     this.classList.add('tap');
 
+// 🔒 freeze everything EXCEPT review box
+document.querySelectorAll('.section').forEach(sec => {
+  if (!sec.querySelector('.google-badge')) {
+    sec.style.opacity = '0.2';
+  }
+});
     setTimeout(() => {
       this.classList.remove('tap');
       target.scrollIntoView({ behavior: 'smooth' });
@@ -301,5 +307,7 @@ function focusReviews() {
 }
 
 </script>
+</body>
+</html> 
 </body>
 </html> 
