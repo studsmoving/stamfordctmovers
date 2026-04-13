@@ -286,31 +286,22 @@ function focusReviews() {
     navigator.vibrate(15);
   }
 
-  // freeze everything
-  document.querySelectorAll('.section').forEach(sec => {
-    sec.style.opacity = '0.2';
-  });
+  setTimeout(() => {
 
-  // highlight reviews
+  // highlight reviews (PASTE YOUR CUT CODE HERE)
   if (reviews) {
     reviews.style.opacity = '1';
     reviews.style.transform = "scale(1.03)";
     reviews.classList.add('glow');
-  }
 
-  // unfreeze after 1 second
-  setTimeout(() => {
-
-    document.querySelectorAll('.section').forEach(sec => {
-      sec.style.opacity = '1';
-    });
-
-    if (reviews) {
+    // return to normal after quick pop
+    setTimeout(() => {
       reviews.style.transform = "scale(1)";
       reviews.classList.remove('glow');
-    }
+    }, 300);
+  }
 
-  }, 1000);
+}, 1000);
 
 }
 
