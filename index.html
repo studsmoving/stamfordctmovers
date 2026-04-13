@@ -114,7 +114,9 @@
 
   <!-- SMALL CALL BUTTON UNDER BULLETS -->
   <div class="mini-call-wrap">
-    <a href="tel:+12038897558" class="mini-call-btn">CALL</a>
+    <a href="tel:+12038897558" class="mini-call-btn" onclick="vibrateClick()">
+  CALL
+</a>
   </div>
 
   <p>
@@ -131,7 +133,9 @@
 
   <!-- CALL BUTTON -->
   <div class="mini-call-wrap">
-    <a href="tel:+12038897558" class="mini-call-btn">CALL</a>
+    <a href="tel:+12038897558" class="mini-call-btn" onclick="vibrateClick()">
+  CALL
+</a>
   </div>
 
   <p>
@@ -148,7 +152,9 @@
 
   <!-- CALL BUTTON -->
   <div class="mini-call-wrap">
-    <a href="tel:+12038897558" class="mini-call-btn">CALL</a>
+    <a href="tel:+12038897558" class="mini-call-btn" onclick="vibrateClick()">
+  CALL
+</a>
   </div>
 
   <p>
@@ -358,6 +364,13 @@ setTimeout(() => {
   }
 }, 1000);
 }
+<script>
+function vibrateClick() {
+  if (navigator.vibrate) {
+    navigator.vibrate(15);
+  }
+}
+
 
 </script>
 </body>
