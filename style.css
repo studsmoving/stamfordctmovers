@@ -775,4 +775,9 @@ body {
   border-radius: 999px;
   pointer-events: none;
 }
+/* 🔥 FORCE SUBTITLE TO STAY ON ONE LINE */
+.subtitle {
+  font-size: 13px;        /* slightly smaller */
+  white-space: nowrap;    /* prevents wrapping */
+}
 
