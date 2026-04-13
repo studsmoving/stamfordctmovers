@@ -1043,3 +1043,11 @@ body {
   margin-bottom: 6px !important;
   padding-bottom: 10px !important;
 }
+.google-badge {
+  min-height: unset !important;
+  height: auto !important;
+}
+
+#reviews {
+  padding-bottom: 30px !important;
+}
