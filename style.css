@@ -978,3 +978,11 @@ body {
 #reviews {
   overflow: visible !important;
 }
+
+.review-quote {
+  height: auto;
+  overflow: visible;
+}
+.review-quote {
+  contain: layout;
+}
