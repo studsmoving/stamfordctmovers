@@ -230,6 +230,7 @@
     Stamford • Greenwich • Darien • Norwalk • New Canaan • Westport • Wilton • Fairfield County
   </p>
 </div>
+
 <script>
 document.querySelectorAll('.nav-btn').forEach(btn => {
   btn.addEventListener('click', function(e) {
@@ -255,6 +256,7 @@ function vibrateTap() {
 }
 </script>
 </body>
+
 <script>
 function toggleEin() {
   var box = document.getElementById("ein-expanded");
@@ -277,33 +279,19 @@ function focusReviews() {
   // vibration
   vibrateTap();
 
-  // delay so scroll finishes first
-  setTimeout(() => {
-
-    // fade everything
-    document.querySelectorAll('.section').forEach(sec => {
-      sec.style.opacity = '0.2';
-    });
-
-    // highlight reviews
-    if (reviews) {
-      reviews.style.opacity = '1';
-      reviews.style.transform = "scale(1.03)";
-      reviews.classList.add('glow');
-    }
-
-  }, 100);
+  // zoom + glow
+  if (reviews) {
+    reviews.style.transform = "scale(1.03)";
+    reviews.style.transition = "transform 0.3s ease";
+    reviews.classList.add('glow');
+  }
 }
 
 
-// unlock when user interacts
-function unlockSections() {
+// RESET when user scrolls OR taps anywhere
+function resetReviews() {
 
   const reviews = document.getElementById('reviews');
-
-  document.querySelectorAll('.section').forEach(sec => {
-    sec.style.opacity = '1';
-  });
 
   if (reviews) {
     reviews.style.transform = "scale(1)";
@@ -312,9 +300,9 @@ function unlockSections() {
 }
 
 
-// unlock on interaction
-window.addEventListener('scroll', unlockSections, { once: true });
-document.addEventListener('click', unlockSections, { once: true });
+// unlock on FIRST interaction only
+window.addEventListener('scroll', resetReviews, { once: true });
+document.addEventListener('click', resetReviews, { once: true });
 
 </script>
 </html>
