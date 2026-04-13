@@ -606,5 +606,17 @@ body {
 .google-badge {
   padding: 18px;   /* 🔥 slightly smaller box */
 }
+.google-badge {
+  margin-top: 0;   /* 🔥 removes any added space */
+}
+.section {
+  padding: 12px 15px;   /* 🔥 slightly tighter overall */
+}
+.section:last-of-type {
+  padding-bottom: 5px;   /* 🔥 trims the gap */
+}
 
+.section p {
+  margin-bottom: 8px;   /* 🔥 was too large */
+}
 
