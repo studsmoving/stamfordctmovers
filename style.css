@@ -801,3 +801,71 @@ body {
   margin-top: 8px !important;
   margin-bottom: 8px !important;
 }
+/* 🔥 ULTRA SHINY GEL EFFECT (NEXT LEVEL) */
+.call-btn,
+.mini-call-btn,
+.review-btn {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    #fff3a0 0%,
+    #ffe27a 25%,
+    #f7c948 55%,
+    #f2b705 100%
+  ) !important;
+
+  box-shadow:
+    inset 0 4px 8px rgba(255,255,255,0.9),   /* strong top glow */
+    inset 0 -6px 10px rgba(0,0,0,0.18),      /* bottom depth */
+    0 10px 22px rgba(0,0,0,0.28);            /* outer lift */
+
+  border-radius: 999px;
+}
+
+
+/* 🔥 MAIN LIGHT REFLECTION (top gloss) */
+.call-btn::before,
+.mini-call-btn::before,
+.review-btn::before {
+  content: "";
+  position: absolute;
+  top: 6%;
+  left: 8%;
+  width: 84%;
+  height: 42%;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.95),
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0.15),
+    transparent
+  );
+
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+
+/* 🔥 SECONDARY EDGE SHINE (makes it look ROUND) */
+.call-btn::after,
+.mini-call-btn::after,
+.review-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 8%;
+  left: 12%;
+  width: 76%;
+  height: 20%;
+
+  background: linear-gradient(
+    to top,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+
+  border-radius: 999px;
+  pointer-events: none;
+}
