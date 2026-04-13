@@ -479,15 +479,18 @@ body {
   font-style: italic;
   color: #222;
   text-align: center;
-  margin: 20px 10px 30px;
-  padding: 14px;
-  border-left: 4px solid gold;
-  background: #fffdf5;
 
-  /* fade in */
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeIn 1s ease forwards;
+  margin: 10px 10px 10px;   /* 🔥 reduced top + bottom spacing */
+  padding: 14px;
+
+  border-left: 5px solid #f2b705;
+  background: linear-gradient(#fffdf5, #fff8dc);
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  border-radius: 10px;
+
+  opacity: 1;               /* 🔥 remove animation causing cutoff */
+  transform: none;
 }
 
 /* name under quote */
